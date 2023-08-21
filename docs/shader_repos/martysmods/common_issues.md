@@ -11,7 +11,7 @@ This is a collection of issues, which you can stumble upon while trying to insta
 
 ---
 
-<details markdown="block">
+<details markdown="block" class="details-tree">
 <summary><font size="-0.3">Patreon Roles not Updating in Discord</font></summary>
 >
 >If you're encountering difficulties in accessing the iMMERSE Pro archive due to role permissions, follow these steps to rectify the issue:
