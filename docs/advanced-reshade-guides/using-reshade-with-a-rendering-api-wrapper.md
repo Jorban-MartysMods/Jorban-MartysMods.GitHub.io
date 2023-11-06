@@ -91,10 +91,63 @@ If ReShade doesn't display after Vulkan installation, you might have selected an
 </details>
 
 ---
+## DGVoodoo 2: Wrapping 3DFX Glide and Direct3D / DirectX (1 to 9) to DirectX12
+DGVoodoo2 is a tool designed to wrap old proprietary renderers from 3DFX and very old Direct3D renderers to more recent DirectX equivalents. It is not only valuable to make old titles benefit of Compute Shaders and other advanced features where a Vulkan GPU isn't applicable, but also to make old titles work better on modern OSes and even fix old graphical issues with them.
+
 
 <details markdown="block" class="details-tree">
-<summary>DGVoodoo 2</summary>
+<summary>Installing DGVoodoo 2</summary>
 
-Coming soon >:)
+---
+### 1. Download DGVoodoo2
 
+Acquire the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/), as the time of writing this guide, the latest version is 2.83.1.
+
+---
+### 2. Extract the downloaded files
+Extract the files somewhere you can find them later or when you need it again. Make sure you have permissions to write on this directory. I'd suggest extracting it to Documents or even the Desktop. As long as you have permissions on its directory, its better.
+
+---
+### 3 . Locate your game directory
+For this example, i'll be using the old Ubisoft game, POD (Planet of Death), it uses the Glide renderer, the instructions are similar for DirectX, but might differ a bit, in the latter example, we'll use a DirectX game.
+
+  * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+
+---
+### 4. Locate the game directory within dgVoodoo2
+
+Now that we got our directory and files extracted, its time to install it.
+To prevent issues, we recommend you to run the tool as Administrator, since we're likely to try to write to folders which requires elevated permissions. After opening, you'll be greeted with its main window.
+
+![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
+To start installing dgVoodoo2 to your desired game, click on the button named "Add", and then navigate to the game's directory as located before.
+
+![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
+Now that its done, we can start configuring it. It is not quite installed yet, but we'll leave that for the end.
+
+---
+### 5. Configure the game
+To configure dgVoodoo2 to the game, click on the tab that says "Glide". Most of the options are self-explainatory, but its worth going through some of them and explaining.
+
+![All of the options and buttons on the tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_glide_tab.png)
+
+First one worth taking note is the 3Dfx card option. This will tell the game which "GPU" you have. As in, what GPU functions and specs dgVoodoo2 will simulate. Most games work on default settings, but some of them might require specific models.
+
+Second one is the Onboard RAM, this will define how much RAM your "GPU" has, most games works on 8MB, but if you want to bump up the graphics on a few of them, they might require 16MB.
+
+In texturing, most of them can be left as-is, but if you feel the need to change, go to the Memory Size and Texturing drop-down menus. Those are useful to define how much Memory Size each mapping unit has and how many of them. Only Voodoo3 and onward had variants with different TMUs, so if you plan on keeping using the Voodoo2, this isn't required. 
+
+In Miscellaneous, you can disable the "3Dfx Watermark" checkbox to disable the watermark in the games, or leave it enabled. It is purely aesthetic.
+
+After all that's done, all that remains is copying the DLL and running the game.
+
+---
+### 6. Finishing dgVoodoo2 installation
+After all that, its time to get to work, open 2 Explorer windows, in one of them, go to the game directory, in another, go to the dgVoodoo2 directory. After going there, open the 3dfx folder, select x86, drag and drop the 3 DLL files to the game directory. Then run the game, and it should be installed.
+
+That covers it for dgVoodoo2 glide installation.
+![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dlls.png)
+
+---
 </details>
+
