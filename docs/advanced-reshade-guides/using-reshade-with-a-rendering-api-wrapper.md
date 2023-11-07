@@ -152,6 +152,8 @@ That covers it for dgVoodoo2 glide installation.
 ---
 </details>
 
+---
+
 <details markdown="block" class="details-tree">
 <summary>Installing DGVoodoo 2 (for DirectX)</summary>
 
