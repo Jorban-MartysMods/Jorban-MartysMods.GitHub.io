@@ -96,7 +96,7 @@ DGVoodoo2 is a tool designed to wrap old proprietary renderers from 3DFX and ver
 
 
 <details markdown="block" class="details-tree">
-<summary>Installing DGVoodoo 2</summary>
+<summary>Installing DGVoodoo 2 (for 3DFX Glide)</summary>
 
 ---
 ### 1. Download DGVoodoo2
@@ -147,6 +147,63 @@ After all that, its time to get to work, open 2 Explorer windows, in one of them
 
 That covers it for dgVoodoo2 glide installation.
 ![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dlls.png)
+
+---
+</details>
+
+<details markdown="block" class="details-tree">
+<summary>Installing DGVoodoo 2 (for DirectX)</summary>
+
+---
+### 1. Download DGVoodoo2
+
+Acquire the latest version of dgVoodoo2 from [dege's website](http://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/), as the time of writing this guide, the latest version is 2.83.1.
+
+---
+### 2. Extract the downloaded files
+Extract the files somewhere you can find them later or when you need it again. Make sure you have permissions to write on this directory. I'd suggest extracting it to Documents or even the Desktop. As long as you have permissions on its directory, its better.
+
+---
+### 3 . Locate your game directory
+For this example, this time i'll be using TrackMania Sunrise, which is an old DirectX 8-9 game.
+
+  * If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/special-and-others/finding-your-game-executable-and-directory/) for assistance!
+
+---
+### 4. Locate the game directory within dgVoodoo2
+
+Now that we got our directory and files extracted, its time to install it.
+To prevent issues, we recommend you to run the tool as Administrator, since we're likely to try to write to folders which requires elevated permissions. After opening, you'll be greeted with its main window.
+
+![Main Window, General tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_main_window.png)
+To start installing dgVoodoo2 to your desired game, click on the button named "Add", and then navigate to the game's directory as located before.
+
+![Find Directory Dialogue](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_directory_dialogue.png)
+Now that its done, we can start configuring it. It is not quite installed yet, but we'll leave that for the end.
+
+---
+### 5. Configure the game
+To configure dgVoodoo2 to the game, click on the tab that says "DirectX". Most of the options are self-explainatory, but its worth going through some of them and explaining.
+
+![All of the options and buttons on the tab](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_tab.png)
+
+Videocard is the card dgVoodoo2 will be emulating. Some games requires specific brands for features, but most of the time, dgVoodoo 3D Virtual accelerated card will work just fine. Set it to the max VRAM you have available.
+
+In the Miscellaneous section, make sure to disable the checkbox with "dgVoodoo watermark". This will remove the watermark on the lower-right of the screen.
+
+---
+### 6. Finishing dgVoodoo2 installation
+After all that, its time to get to work, open 2 Explorer windows, in one of them, go to the game directory, in another, go to the dgVoodoo2 directory. 
+After going there, open the MS folder, now, take note of what DLLs to move in a game-to-game basics:
+
+ * If its a Direct3D (1 to 7) game, the DLLs are: D3DImm.dll and DDraw.dll
+ * If its a DirectX 8 game, the DLL is: D3D8.dll
+ * If its a DirectX 9 game, the DLL is: D3D9.dll
+	
+If you are in doubt on what DLL to use, check the [PCGamingWiki](https://pcgamingwiki.com/) page to get its architecture and DirectX version.
+
+That covers it for dgVoodoo2 Direct3D installation.
+![Final Stretch](../images/using-reshade-with-a-rendering-api-wrapper/dgvoodoo2_dx_dlls.png)
 
 ---
 </details>
