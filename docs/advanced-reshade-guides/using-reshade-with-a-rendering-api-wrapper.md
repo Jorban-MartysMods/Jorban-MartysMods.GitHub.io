@@ -94,6 +94,7 @@ If ReShade doesn't display after Vulkan installation, you might have selected an
 ## DGVoodoo 2: Wrapping 3DFX Glide and Direct3D / DirectX (1 to 9) to DirectX12
 DGVoodoo2 is a tool designed to wrap old proprietary renderers from 3DFX and very old Direct3D renderers to more recent DirectX equivalents. It is not only valuable to make old titles benefit of Compute Shaders and other advanced features where a Vulkan GPU isn't applicable, but also to make old titles work better on modern OSes and even fix old graphical issues with them.
 
+After that is done, when installing ReShade on a dgVoodoo2-wrapped game, you'll have to select the option for DirectX11/12. Keep that in mind, otherwise, ReShade won't work.
 
 <details markdown="block" class="details-tree">
 <summary>Installing DGVoodoo 2 (for 3DFX Glide)</summary>
