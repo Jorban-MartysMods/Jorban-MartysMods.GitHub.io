@@ -8,10 +8,11 @@ grand_parent: Shader Repositories
 
 # iMMERSE Pro: RTGI
 
-{% slider auto %}
- ![image #1](../images/rtgi_header.png)
- ![image #2](../images/rtgi_header2.png)
-{% endslider %}
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
+![RTGI Header](../images/rtgi_header.png)
 
 {: .highlight-title }
 >IMPORTANT
@@ -26,11 +27,10 @@ Raytraced Global Illumination (RTGI) is a shader within iMMERSE Pro that brings 
 
 * **Quality:** Configures the quality of RTGI's diffuse global illumination. Higher settings cast more rays per pixel and provide more samples per ray, resulting in more stable and detailed lighting. 
 
-{% comment %}
-Once a new image is provided, add the statement below to the quality portion.
-The image below shows the difference between Low and Ultra settings.
-![RTGI Low/Ultra Quality](../images/diffuse_rtgi_quality.png) 
-{% endcomment %}
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_dq_low.png" data-label="Low">
+     <img src="../images/rtgi_dq_ultra.png" data-label="Ultra">
+     </div>
 
 * **Ambient Occlusion Intensity:** Adjusts the strength of the ambient occlusion, which enhances the perception of depth and shadows in crevices and corners.
 
@@ -50,19 +50,17 @@ The image below shows the difference between a z-thickness that is too low, just
 
 * **Quality:** Adjusts the quality of RTGI's specular global illumination. Higher settings increase the number of rays cast per pixel and the samples per ray, enhancing light reflections and stability.
 
-{% comment %}
-Once a new image is provided, add the statement below to the quality portion.
-The image below shows the difference between Low and Ultra settings.
-![RTGI Low/Ultra Quality](../images/specular_rtgi_quality.png) 
-{% endcomment %}
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_sq_low.png" data-label="Low">
+     <img src="../images/rtgi_sq_ultra.png" data-label="Ultra">
+     </div>
 
 * **Surface Roughness:** Adjusts the roughness value for materials in the scene, with rougher surfaces diffusing more light based reflections while smoother surfaces will reflect more sharper lighting based reflections.
 
-{% comment %}
-Once a new image is provided, add the statement below to the surface roughness portion.
-The image below shows the difference between a low and high surface roughness.
-![RTGI Low/High Surface Roughness](../images/rtgi_surface_roughness.png)
-{% endcomment %}
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_sr_0.000.png" data-label="0.000">
+     <img src="../images/rtgi_sr_0.500.png" data-label="0.500">
+     </div>
 
 * **Specular Lighting Intensity:** Sets the strength of the specular global illumination, impacting clarity of reflected light on shiny surfaces.
 
@@ -71,6 +69,12 @@ The image below shows the difference between a low and high surface roughness.
 ## Blending Arguments
 
 * **Ambient Level:** Modifies the overall amount of ambient light in the scene, influencing the general brightness and visibility of details. However, this will allow RTGI to increasingly add more raytraced global illumination back into the scene.
+
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_al_0.000.png" data-label="0.000">
+     <img src="../images/rtgi_al_1.000.png" data-label="1.000">
+     </div>
+
 
 * **Ambient Sky Intensity:** Regulates the intensity of ambient light coming from the sky, contributing to the natural illumination of the scene.
 
@@ -87,13 +91,15 @@ The image below shows the difference between a low and high surface roughness.
 ## Debug Arguments
 
 * **Enable Debug View:** Provides the user with two debug views.
- * **Validation Layer:** Debug providing visual output of Depth, Lighting, Normal Vectors, and Optical Flow
-{% comment %}
-Once a new image is provided, add the image below to the validation layer portion.
-![RTGI Low/High Surface Roughness](../images/rtgi_vl_debug.png)
-{% endcomment %}
- * **Lighting only:** Standard Lighting Channel Debug
-{% comment %}
-Once a new image is provided, add the image below to the Lighting only portion.
-![RTGI Low/High Surface Roughness](../images/rtgi_lc_debug.png)
-{% endcomment %}
+    * **Validation Layer:** Debug providing visual output of Depth, Lighting, Normal Vectors, and Optical Flow
+    * **Lighting only:** Standard Lighting Channel Debug
+
+
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
