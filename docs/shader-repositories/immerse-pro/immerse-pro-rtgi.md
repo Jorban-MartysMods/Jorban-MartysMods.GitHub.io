@@ -12,7 +12,11 @@ grand_parent: Shader Repositories
 <!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
 <link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
 
+{% slider %}
 ![RTGI Header](../images/rtgi_header.webp)
+![RTGI Header2](../images/rtgi_header2.webp)
+![RTGI Header3](../images/rtgi_header3.webp)
+{% endslider %}
 
 {: .highlight-title }
 >IMPORTANT
