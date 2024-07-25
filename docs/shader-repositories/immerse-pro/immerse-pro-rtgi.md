@@ -68,14 +68,14 @@ Raytraced Global Illumination (RTGI) is a shader within iMMERSE Pro that brings 
 
 ## Denoiser
 
-* **Quality:** Controls the quality of the denoiser.
+* **Quality:** Controls the quality of the denoiser. Higher quality denoisers will end up being more performance intense, but will also provide a much more coherent and stable image.
 
      <div class="juxtapose" data-mode="horizontal">
      <img src="../images/rtgi_dnq_low.webp" data-label="Low Quality">
      <img src="../images/rtgi_dnq_high.webp" data-label="High Quality">
      </div>
 
-* **Smoothness:** Controls the smoothness of the denoiser. Lower typically means a more grainy image with higher quality shadows and GI, while higher values typically reduce the sharpness of the shading and GI in order to provide a much more coherent image. 
+* **Smoothness:** Controls the smoothness of the denoiser. Lower typically means a more grainy image with higher quality shadows and global illumination, while higher values typically reduce the sharpness of the shading and global illumination in order to provide a much more coherent image. 
 
      <div class="juxtapose" data-mode="horizontal">
      <img src="../images/rtgi_sm_0.000.webp" data-label="0.000">
