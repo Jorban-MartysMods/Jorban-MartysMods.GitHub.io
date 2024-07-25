@@ -28,31 +28,27 @@ Raytraced Global Illumination (RTGI) is a shader within iMMERSE Pro that brings 
 * **Quality:** Configures the quality of RTGI's diffuse global illumination. Higher settings cast more rays per pixel and provide more samples per ray, resulting in more stable and detailed lighting. 
 
      <div class="juxtapose" data-mode="horizontal">
-     <img src="../images/rtgi_dq_low.png" data-label="Low">
-     <img src="../images/rtgi_dq_ultra.png" data-label="Ultra">
+     <img src="../images/rtgi_dq_low.png" data-label="Low Quality">
+     <img src="../images/rtgi_dq_ultra.png" data-label="Ultra Quality">
      </div>
 
 * **Ambient Occlusion Intensity:** Adjusts the strength of the ambient occlusion, which enhances the perception of depth and shadows in crevices and corners.
 
 * **Bounce Lighting Intensity:** Controls the intensity of the diffuse global illumination, affecting how much indirect light bounces off surfaces and illuminates the scene.
 
-* **Z-Thickness:** Defines the perceived thickness of objects in the scene. Setting this too high can cause visual artifacts, while too low a setting can impair shading, shadowing, and global illumination propagation.
+* **Z-Thickness:** Defines the perceived thickness of objects in the scene. Setting this too high can cause visual artifacts, while too low a setting can impair shading, shadowing, and global illumination propagation. The image below shows the difference between a z-thickness that is too low, just right, and too high.
 
-{% comment %}
-Once a new image is provided, add the statement below to the z-thickness portion.
-The image below shows the difference between a z-thickness that is too low, just right, and too high.
-![RTGI ZThickness Low/Right/High](../images/rtgi_z_thickness.png)
-{% endcomment %}
+    ![RTGI ZThickness Low/Right/High](../images/rtgi_zt_comparison.png)
 
 ---
 
 ## Specular RTGI
 
-* **Quality:** Adjusts the quality of RTGI's specular global illumination. Higher settings increase the number of rays cast per pixel and the samples per ray, enhancing light reflections and stability.
+* **Quality:** Adjusts the quality of RTGI's specular global illumination. Higher settings increase the number of rays cast per pixel and the samples per ray, enhancing light reflections and stability. Having higher surface roughness values will often require higher quality modes in order to remove noise from the image.
 
      <div class="juxtapose" data-mode="horizontal">
-     <img src="../images/rtgi_sq_low.png" data-label="Low">
-     <img src="../images/rtgi_sq_ultra.png" data-label="Ultra">
+     <img src="../images/rtgi_sq_low.png" data-label="Low Quality">
+     <img src="../images/rtgi_sq_ultra.png" data-label="Ultra Quality">
      </div>
 
 * **Surface Roughness:** Adjusts the roughness value for materials in the scene, with rougher surfaces diffusing more light based reflections while smoother surfaces will reflect more sharper lighting based reflections.
@@ -63,6 +59,24 @@ The image below shows the difference between a z-thickness that is too low, just
      </div>
 
 * **Specular Lighting Intensity:** Sets the strength of the specular global illumination, impacting clarity of reflected light on shiny surfaces.
+
+---
+
+## Denoiser
+
+* **Quality:** Controls the quality of the denoiser.
+
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_dnq_low.png" data-label="Low Quality">
+     <img src="../images/rtgi_dnq_high.png" data-label="High Quality">
+     </div>
+
+* **Smoothness:** Controls the smoothness of the denoiser. Lower typically means a more grainy image with higher quality shadows and GI, while higher values typically reduce the sharpness of the shading and GI in order to provide a much more coherent image. 
+
+     <div class="juxtapose" data-mode="horizontal">
+     <img src="../images/rtgi_sm_0.000.png" data-label="0.000">
+     <img src="../images/rtgi_sm_0.500.png" data-label="0.500">
+     </div>
 
 ---
 
@@ -91,8 +105,12 @@ The image below shows the difference between a z-thickness that is too low, just
 ## Debug Arguments
 
 * **Enable Debug View:** Provides the user with two debug views.
+    * **Disabled:** Standard RTGI output.
+        ![Disabled Debug](../images/rtgi_disabled_ld.png)
     * **Validation Layer:** Debug providing visual output of Depth, Lighting, Normal Vectors, and Optical Flow
+        ![Validation Layer Debug](../images/rtgi_validation_layer_ld.png)
     * **Lighting only:** Standard Lighting Channel Debug
+        ![Lighting only Debug](../images/rtgi_lighting_only_ld.png)
 
 
 
