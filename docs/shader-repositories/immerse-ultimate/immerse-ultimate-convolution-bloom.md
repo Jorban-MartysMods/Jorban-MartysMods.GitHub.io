@@ -12,66 +12,59 @@ grand_parent: Shader Repositories
 # iMMERSE Ultimate: Convolution Bloom
 
 <div class="juxtapose" data-mode="horizontal">
-<img src="../images/convbloom_header_off.png" data-label="Disabled">
-<img src="../images/convbloom_header_on.png" data-label="Enabled">
+<img src="../images/convbloom_header_off.webp" data-label="Disabled">
+<img src="../images/convbloom_header_on.webp" data-label="Enabled">
 </div>
 
-Convolution Bloom (or FFT Bloom) is an advanced high-end bloom effect based on Fast-Fourier Transform. This technique allows for the bloom to produce unique "spikes" or convolutions.
+Convolution Bloom is an advanced high-end bloom effect based on Fast-Fourier Transform. This technique allows for the bloom to produce unique "spikes" or convolutions.
 
 ---
 
-## Shader Arguments
+## General Shader Arguments
 
 * **Bloom Padding:** Due to the nature of Fast-Fourier Transforms, the bloom often extends beyond the screen boundaries, causing artifacts at the edges. This parameter controls the padding that is given to the bloom in order to account for this.
 
-* **Log Exposure Bias and Log HDR Whitepoint:** These parameters control the light absorption and brightness levels. Increasing the exposure bias results in more bloom around colors that are further away from the max whitepoint of the scene, while a higher whitepoint intensifies the glow of objects that are providing colors that are closer to pure white.
+* **Log Exposure Bias:** Description Currently Under Construction <!-- Figure out more to put here !-->
 
-* **Bloom Intensity:** Adjusts the overall strength of the bloom effect.
+* **Log HDR Whitepoint:** Description Currently Under Construction  <!-- Figure out more to put here !-->
 
-* **Bloom Radius:** Determines how far the bloom will extend outwards.
+* **Bloom Intensity:** Adjusts the overall strength of the bloom effect. A higher intensity will make the bloom effect more pronounced. Lower intensity settings will result in a more subtle effect.
 
-* **Bloom Hazyness:** Controls the amount of color desaturation in the bloom. A value of `0.000` preserves colors, while a value of `1.000` results in a fully bleached look.
+* **Bloom Radius:** Determines how far the bloom will extend outwards. Increasing the radius will make the bloom spread over a larger area, creating a more diffuse glow and a blurrier convolution spike. A smaller radius will keep the bloom effect closer to the source of brightness, resulting in a more focused glow and sharper convolution spike.
 
-* **Enable Debug View:** 
-    * **Bloom Only:** Allows the user to see only the bloom produced by Convolution Bloom.
+* **Bloom Hazyness:** Controls the amount of color desaturation in the bloom. A value of `1.000` preserves colors, keeping the bloom effect true to the original colors of the bright areas. A value of `0.000` results in a fully bleached look, where the bloom effect is devoid of color and appears white. Adjust this setting to achieve the desired color balance in the bloom effect.
 
-        ![Bloom Only Debug](../images/convbloom_bo_debug.png)
+* **Enable Debug View:**
+    * **Bloom Only:** Allows the user to see only the bloom produced.
+        
+        ![Bloom Only Debug](../images/convbloom_bo_debug.webp)
 
     * **Fourier Transform of Image:** Allows the user to see the Fourier Transform used by Convolution Bloom.
-
-        ![Bloom Only Debug](../images/convbloom_fft_debug.png)
+        
+        ![Fourier Transform Debug](../images/convbloom_fft_debug.webp)
 
 ---
 
+
 ## Diffraction Spikes
 
-* **Diffraction Spike Amount:** Sets the number of spikes in the bloom, akin to the number of camera blades.
+* **Diffraction Spike Amount:** This parameter determines how many diffraction spikes will appear around bright areas. Increasing this value will add more spikes, creating a starburst effect.
 
-* **Diffraction Spike Rotation:** Adjusts the orientation of the spikes, whether they are vertical or tilted.
+* **Diffraction Spike Rotation:** This setting allows you to rotate the diffraction spikes around the bright areas, changing their angle and direction.
 
-* **Diffraction Spike Radius:** Determines how far the spikes extend across the image. Higher values result in longer spikes.
+* **Diffraction Spike Radius:** Determines how far the spikes extend across the image. Higher values result in longer spikes, which will stretch further from the bright areas, creating a more dramatic effect.
 
-* **Diffraction Spike Blurryness:** Controls the sharpness of the spikes. Lower values make the spike shapes more defined.
+* **Diffraction Spike Blurryness:** Controls the sharpness of the spikes. Lower values make the spike shapes more defined and crisp, while higher values will blur the spikes, making them softer and more diffuse.
 
-* **Diffraction Spike Phase Amount:** Adjusts the brightness of the spikes themselves, not the light sources. Higher values make the spikes more visible and bright.
-
-## Inverse Square Glow
-
-* **Glow Intensity:** Controls the reach and intensity of the bloom. Higher values result in a further and brighter bloom.
-
-* **Glare Amount:** Sets the extent of the darker edges of the bloom. Higher values create a darker outline around bloom sources.
+* **Diffraction Spike Phase Amount:** Adjusts the brightness of the spikes themselves. Higher values make the spikes more visible and bright, enhancing their prominence in the bloom effect. This can make the diffraction spikes stand out more against the rest of the scene.
 
 ---
 
 ## Pre-Processor Options
 
-These settings affect the available shader options and performance:
+* **CONVOLUTION_BLOOM_MASK_PRESET:** The default option, "Diffraction Spikes" (option "0"), creates light blades from bright sources, similar to the effect of camera blades. This setting generates star-like patterns around bright areas. "Inverse Square Glow" (option "1") produces a traditional bloom effect similar to iMMERSE Pro: Solaris, resulting in a softer and more uniform glow around bright areas.
 
-* `CONVOLUTION_BLOOM_QUALITY`: Adjusts the resolution of the Fourier kernel. Higher values (0 to 2) yield better results but require more resources.
-
-* `CONVOLUTION_BLOOM_MASK_PRESET`: The default option, "Diffraction Spikes," creates light blades from bright sources, similar to camera blades. "Inverse Square Glow" produces a traditional bloom effect, with light spreading to the surroundings.
-
-
+* **CONVOLUTION_BLOOM_QUALITY:** Adjusts the resolution of the Fourier kernel. Higher values (ranging from 0 to 2) yield better results with more detailed and defined bloom effects but will cost more performance to run. Lower values will reduce the quality of the bloom but can improve performance.
 
 
 <!-- Ending script that runs the sliders on the page -->

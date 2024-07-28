@@ -15,6 +15,8 @@ grand_parent: Shader Repositories
 
 iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. Because of this, you won't see many visible changes on screen.
 
+---
+
 ## Smoothed Normals
 
 * **Smoothed Normals** Configures the normals to be smoothed or not. Smoothed normals allows for RTGI and ReLight to provide much better lighting than they could with the original normals.
