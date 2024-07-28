@@ -5,55 +5,79 @@ nav_order: 12
 parent: "iMMERSE Ultimate"
 grand_parent: Shader Repositories
 ---
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
 
 # iMMERSE Ultimate: Convolution Bloom
 
-Convolution Bloom (or FFT Bloom) is a more-advanced and high-end bloom based on Fast-Fourier Transform with a different end-effect. The way it works allows for bloom to have different shapes and sizes, instead of being just huge glowing light sources. Those being "Spikes", which simulates blades from a camera, and "Inverse Square Glow", which is similar to traditional bloom methods, but with a much higher range.
+<div class="juxtapose" data-mode="horizontal">
+<img src="../images/convbloom_header_off.png" data-label="Disabled">
+<img src="../images/convbloom_header_on.png" data-label="Enabled">
+</div>
 
-More about those will be shown later down the guide, meanwhile, we'll focus on the shared options.
+Convolution Bloom (or FFT Bloom) is an advanced high-end bloom effect based on Fast-Fourier Transform. This technique allows for the bloom to produce unique "spikes" or convolutions.
 
 ---
 
 ## Shader Arguments
 
-* **Bloom Padding:** Due to the way FFT works, the bloom will usually go beyond the screen resolution and boundaries and "leak" to the top or bottom of the image, causing weird / innacurate results. This parameter creates a black border to mitigate this, but will also reduce how far the bloom goes.
+* **Bloom Padding:** Due to the nature of Fast-Fourier Transforms, the bloom often extends beyond the screen boundaries, causing artifacts at the edges. This parameter controls the padding that is given to the bloom in order to account for this.
 
-* **Log Exposure Bias and Log HDR Whitepoint:** are responsible for telling how much light the "camera" is absorbing and how bright the "White" is. The more exposure bias, the more bloom, and the higher the Whitepoint, the more intense the bright parts will glow.
+* **Log Exposure Bias and Log HDR Whitepoint:** These parameters control the light absorption and brightness levels. Increasing the exposure bias results in more bloom around colors that are further away from the max whitepoint of the scene, while a higher whitepoint intensifies the glow of objects that are providing colors that are closer to pure white.
 
-* **Bloom Intensity:** Changes the overall intensity of the bloom. Independent of what area is considered white or "dark".
+* **Bloom Intensity:** Adjusts the overall strength of the bloom effect.
 
-* **Bloom Radius:** How large are the light glows / ranges.
+* **Bloom Radius:** Determines how far the bloom will extend outwards.
 
-* **Bloom Hazyness:** Changes how much of the colors the bloom washes-away. With 0 being no color changes, and 1 being a full bleached look.
+* **Bloom Hazyness:** Controls the amount of color desaturation in the bloom. A value of `0.000` preserves colors, while a value of `1.000` results in a fully bleached look.
 
-* **Enable Debug View:** Shows multiple debug outputs to help see how the shader is working, with the first option showing only the output of the bloom (how the bright areas look without taking the general image into consideration) and the second showing the Fourier texture of the bloom (more dev-oriented).
+* **Enable Debug View:** 
+    * **Bloom Only:** Allows the user to see only the bloom produced by Convolution Bloom.
 
----
+        ![Bloom Only Debug](../images/convbloom_bo_debug.png)
 
-## Pre-Processor Options
+    * **Fourier Transform of Image:** Allows the user to see the Fourier Transform used by Convolution Bloom.
 
-Before talking about the other options, we must talk about the Pre-Processor ones since those interfere on what options you'll have at your disposure, the Pre-Processor settings are:
-
-* `CONVOLUTION_BLOOM_QUALITY`: Changes the resolution of the Fourier kernel, higher values (from 0 to 2) will produce better results, but also require more resources.
-
-* `CONVOLUTION_BLOOM_MASK_PRESET`: The default option is "Diffraction Spikes", which will create blades of light from glowing / bright sources, similar to the blades of a camera. The second one is "Inverse Square Glow", which will create a more traditional bloom (as in, light sources will spread lights to its surroundings).
+        ![Bloom Only Debug](../images/convbloom_fft_debug.png)
 
 ---
 
 ## Diffraction Spikes
 
-* **Diffraction Spike Amount:** How many spikes the bloom has, basically working as how many blades the camera has.
+* **Diffraction Spike Amount:** Sets the number of spikes in the bloom, akin to the number of camera blades.
 
-* **Diffraction Spike Rotation:** The rotation of the blades, as in, if they are coming straight from vertical, or tilted. 
+* **Diffraction Spike Rotation:** Adjusts the orientation of the spikes, whether they are vertical or tilted.
 
-* **Diffraction Spike Radius:** How far the spikes of light go through the image. The higher the value, the further they'll reach.
+* **Diffraction Spike Radius:** Determines how far the spikes extend across the image. Higher values result in longer spikes.
 
-* **Diffraction Spike Blurryness:** How blurry the spikes are. The lower the value, the more evident the spike shapes are.
+* **Diffraction Spike Blurryness:** Controls the sharpness of the spikes. Lower values make the spike shapes more defined.
 
-* **Diffraction Spike Phase Amount:** How bright the spikes are, not the light sources. The higher the values are, the brighter and more visible the spikes will appear.
+* **Diffraction Spike Phase Amount:** Adjusts the brightness of the spikes themselves, not the light sources. Higher values make the spikes more visible and bright.
 
 ## Inverse Square Glow
 
-* **Glow Intensity:** How far the bloom goes and how intense it is, the higher the values is, the further and brighter the bloom will end up being.
+* **Glow Intensity:** Controls the reach and intensity of the bloom. Higher values result in a further and brighter bloom.
 
-* **Glare Amount:** How far the dark part of the bloom goes, the higher, the darker it is at the edges of the bloom sources.
+* **Glare Amount:** Sets the extent of the darker edges of the bloom. Higher values create a darker outline around bloom sources.
+
+---
+
+## Pre-Processor Options
+
+These settings affect the available shader options and performance:
+
+* `CONVOLUTION_BLOOM_QUALITY`: Adjusts the resolution of the Fourier kernel. Higher values (0 to 2) yield better results but require more resources.
+
+* `CONVOLUTION_BLOOM_MASK_PRESET`: The default option, "Diffraction Spikes," creates light blades from bright sources, similar to camera blades. "Inverse Square Glow" produces a traditional bloom effect, with light spreading to the surroundings.
+
+
+
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>

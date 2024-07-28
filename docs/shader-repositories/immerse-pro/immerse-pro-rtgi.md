@@ -6,11 +6,11 @@ parent: "iMMERSE Pro"
 grand_parent: Shader Repositories
 ---
 
-# iMMERSE Pro: RTGI
-
 <!-- Calls the CSS for the script that runs the sliders on the page -->
 <!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
 <link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
+# iMMERSE Pro: RTGI
 
 {% slider %}
 ![RTGI Header](../images/rtgi_header.webp)
