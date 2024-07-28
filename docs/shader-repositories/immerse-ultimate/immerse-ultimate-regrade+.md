@@ -1,5 +1,5 @@
 ---
-title: "ReGrade+ (Addon)"
+title: "ReGrade + (Addon)"
 layout: page
 nav_order: 10
 parent: "iMMERSE Ultimate"
@@ -17,7 +17,7 @@ grand_parent: Shader Repositories
 <img src="../images/regradeplus_header_on.webp" data-label="Enabled">
 </div>
 
-ReGrade+ is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.
+ReGrade + is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.
 
 ---
 
