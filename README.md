@@ -1,6 +1,6 @@
 # Repository for guides.martysmods.com
 
-## Tech & Framework
+## Documentation
 
 * **Jekyll:** A simple, blog-aware static site generator. [Learn More](https://jekyllrb.com)
 * **Just The Docs:** A modern, customizable, and responsive documentation theme for Jekyll. [Repository](https://github.com/just-the-docs/just-the-docs) | [Official Documentation](https://just-the-docs.com)
@@ -10,10 +10,8 @@
 
 ## Setting Up Jekyll on Windows using RubyInstaller
 
-1. **Dependencies:** Download and install [RubyInstaller](https://rubyinstaller.org/downloads/).
-    * Execute `ridk install` from CMD as **Administrator**.
+1. **Dependencies:** Download and install [RubyInstaller 3.2.x Hyperlinked Here](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.2.5-1/rubyinstaller-devkit-3.2.5-1-x64.exe).
     * Opt for the `MSYS2 and MINGW development tool chain`.
-    * Incorrect selection? Simply rerun `ridk install` and choose correctly.
 2. **Environment:** Open CMD/Terminal to allow PATH environment changes.
     * Verify path via `path` in CMD.
     * Standard path: `PATH=C:\Ruby32-x64\bin;`.
@@ -24,8 +22,8 @@
 
 1. Clone the GitHub repository.
 2. Navigate to the repository location via terminal/CMD.
-3. Run `bundle install` in CMD (Only needed once).
-4. To locally serve the site, execute `bundle exec jekyll serve`.
+3. Run `setup.bat`.
+4. Run `launch.bat`.
 5. Access the site at `http://localhost:4000`.
 
 ## Markdown Customization
