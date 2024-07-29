@@ -10,7 +10,7 @@ for %%f in (*.jpg *.jpeg *.png *.bmp) do (
     set "filename=%%~nf"
 
     REM Convert the image to WebP format with specified quality
-    cwebp.exe -q %QUALITY% -resize 3440 1440 "%%f" -o "%%~nf.webp"
+    cwebp.exe -q %QUALITY% "%%f" -o "%%~nf.webp"
 )
 
 echo Conversion completed!
