@@ -6,15 +6,19 @@ nav_order: 5
 
 # What Marty's Mods Provides
 
+Everything provided under Marty's public (qUINT, iMMERSE, METEOR) and Patreon repositories (iMMERSE Pro & iMMERSE Ultimate) are shaders for the ReShadeFX shader language. Designed for and applied through the injectable application ReShade. These shaders exist to enhance, define, or drastically change the way that you play your games. Providing the tools that you need in order to cultivate the gameplay experience that you want.
+
+Down the line, there plans to be presets that Patreon's can use, as well as vote on for upcoming relases. However, development is the main priority of the Patreon project, and development for those presets has slowed down.
+
 ## iMMERSE:
 
 iMMERSE is the core repository of shaders from Marty's Mods and are available [on GitHub](https://github.com/martymcmodding/iMMERSE). The iMMERSE repository includes:
 
 | **iMMERSE: Shaders** | **Description:** |
-| Launchpad | A shader designed to process information for both RTGI and ReLight |
-| MXAO | A robust and powerful ambient occlusion shader that can take advantage of irradiance bitfields |
-| Sharpen | A contrast based sharpening shader that can take depth into account |
-| Anti-Aliasing | ReShade's fastest SMAA shader avlaible |
+| [Launchpad](https://www.martysmods.com/launchpad/) | A shader designed to process information for both RTGI and ReLight |
+| [MXAO](https://www.martysmods.com/mxao/) | A robust and powerful ambient occlusion shader that can take advantage of irradiance bitfields |
+| [Sharpen](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-sharpen/) | A contrast based sharpening shader that can take depth into account |
+| [Anti-Aliasing](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-smaa/) | ReShade's fastest SMAA shader avlaible |
 
 ---
 
@@ -23,12 +27,12 @@ iMMERSE is the core repository of shaders from Marty's Mods and are available [o
 iMMERSE Pro is a premium repository of shaders provided by Marty's Mods, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg). For $5 USD, you can access this repository, which currently features:
 
 | **iMMERSE Pro: Shaders** | **Description:** |
-| RTGI | State of the art ray traced global illumination for ReShade |
-| Clarity | A contrast based sharpening technique that closely relates to Photoshop's Clarity function but in real-time. |
-| Depth of Field | A depth of field shader that aims to emulate how physical cameras work in the real world |
-| ReGrade | An extremely powerful real-time color grading suite for ReShade |
+| [RTGI](https://www.martysmods.com/rtgi/) | State of the art ray traced global illumination for ReShade |
+| [Clarity](https://www.martysmods.com/clarity/) | A contrast based sharpening technique that closely relates to Photoshop's Clarity function but in real-time. |
+| [Depth of Field](https://www.martysmods.com/physical-depth-of-field/) | A depth of field shader that aims to emulate how physical cameras work in the real world |
+| [ReGrade](https://www.martysmods.com/regrade/) | An extremely powerful real-time color grading suite for ReShade |
 | Insight | A shader to help users by creating a histogram and magnification tool in ReShade |
-| Solaris | An absurdly robust and performant bloom shader built for ReShade |
+| [Solaris](https://www.martysmods.com/solaris/) | An absurdly robust and performant bloom shader built for ReShade |
 
 ---
 
@@ -37,10 +41,10 @@ iMMERSE Pro is a premium repository of shaders provided by Marty's Mods, availab
 iMMERSE Ultimate is an aditional premium repository of shaders and addons provided by Marty's Mods, available to [the "Pathtracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg). For $10 USD, you can access this suite, which features:
 
 | **iMMERSE Ultimate: Shaders & Addons** | **Description:** |
-| Convolution Bloom | A robust, FFT based, bloom that can provide convolutions in real-time |
-| ReLight | A path-traced point light shader that allows you to place a point of light arbitrarily within the screenspace to illuminate whatever you want |
-| ReGrade+ (Add-On + Shader) | An addon and shader combo that provides a GUI to ReGrade |
-| LUT Manager (Add-On + Shader) | An addon and shader combo that allows you to organize your luts into an individual folder without needing a massive list of shaders for them |
+| [Convolution Bloom](https://www.martysmods.com/convolutionbloom/) | A robust, FFT based, bloom that can provide convolutions in real-time |
+| [ReLight](https://www.martysmods.com/relight/) | A path-traced point light shader that allows you to place a point of light arbitrarily within the screenspace to illuminate whatever you want |
+| [ReGrade+ (Add-On](https://guides.martysmods.com/docs/shader-repositories/immerse-ultimate/immerse-ultimate-regrade+/) | An addon and shader combo that provides a GUI to ReGrade |
+| [LUT Manager (Add-On)](https://guides.martysmods.com/docs/shader-repositories/immerse-ultimate/immerse-ultimate-lut-manager/) | An addon and shader combo that allows you to organize your luts into an individual folder without needing a massive list of shaders for them |
 
 ---
 
@@ -56,9 +60,9 @@ All purchased shader repositories & archives are free to keep as long as you do 
 iMMERSE comes in three different tiers:
 
 | **Repository / Tier** | **Price & Download** |
-| iMMERSE | No Purchase Required - [Downloadable on GitHub](https://github.com/martymcmodding/iMMERSE) |
-| [iMMERSE Pro - Raytracers Tier](https://www.patreon.com/mcflypg/membership) | Purchased on Patreon for 5USD - [Downloadable on Discord](https://discord.com/channels/494578207505514496/494599998059839498) |
-| [iMMERSE Ultimate - Pathtracers Tier](https://www.patreon.com/mcflypg/membership) | Avalible on Patreon for 9USD - [Downloadable on Discord](https://discord.com/channels/494578207505514496/494599917273350164) | 
+| iMMERSE | No Purchase Required - [Downloadable on GitHub or through iMMERSE Pro/Ultimate archives on Discord](https://github.com/martymcmodding/iMMERSE) |
+| [iMMERSE Pro - Raytracers Tier](https://www.patreon.com/mcflypg/membership) | Purchased on Patreon for 5USD - [Downloadable on Discord only](https://discord.com/channels/494578207505514496/494599998059839498) |
+| [iMMERSE Ultimate - Pathtracers Tier](https://www.patreon.com/mcflypg/membership) | Avalible on Patreon for 9USD - [Downloadable on Discord only](https://discord.com/channels/494578207505514496/494599917273350164) | 
 
 ---
 
@@ -94,20 +98,41 @@ Downloading any premium Marty's Mods repository requires access to Discord and P
 
 1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:40%" }
+    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:59%" }
+
 
 2. Once there, click the "**Discord**" button
 
-    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png){: style="max-width:40%" }
+    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png)
 
 3. Afterwards, you'll be taken to a new portion of the settings menu where you can "**Connect**" a Discord account. Click the "**Connect**" button.
 
-    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.png){: style="max-width:40%" }
+    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.png){: style="max-width:39%" }
 
 4. A new window should appear asking you to log into Discord.
 
-    ![Patreon Discord Login](./images/patreon-discord-login.png){: style="max-width:40%" }
+    ![Patreon Discord Login](./images/patreon-discord-login.png){: style="max-width:39%" }
 
 5. Now that you are logged in, Discord will tell you about Patreon's connection to your Discord account, as well as ask you to authorize the connection. Click "**Authorize**" in the bottom right hand corner.
 
-    ![Patreon Discord Authorization](./images/discord-authorize.png){: style="max-width:40%" }
+    ![Patreon Discord Authorization](./images/discord-authorize.png){: style="max-width:80%" }
+
+# Forcing Patreon to Provide Discord Benifits
+
+Unfortunately, the Patreon and Discord intergration for larger servers and Patreon communities is slow. In order to force Patreon to provide you the benifits that you've paid for on our Discord (for downloading our shaders and being a part of our community) you can follow the steps provided below:
+
+0. If you are already a member of our Discord server, it's best to leave the server manually. You can do this by going to the top of Discord on the left hand side, clicking "PGHub" and then clicking "Leave Server"
+
+    ![PGHub Leave](./images/pghub_leave.png)
+
+1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
+
+    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:59%" }
+
+2. Once there, click the "**Discord**" button
+
+    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png)
+
+3. Now that you're at the connected application page for Discord, click "Join Server" for the Patreon server for "Pascal Gilcher"
+
+    ![Patreon Pascal Gilcher Join Button](./images/patreon_join_server.png){: style="max-width:60%" }
