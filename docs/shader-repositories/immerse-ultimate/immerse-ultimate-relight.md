@@ -6,6 +6,10 @@ parent: "iMMERSE Ultimate"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
 # iMMERSE Ultimate: ReLight
 
 ![ReLight Main Image](../images/relight-main.webp)
@@ -21,84 +25,95 @@ While you can use it for any sort of scene, use-cases prove that close-ups or ph
 
 ---
 
-## ReLight's Debug
+## Global Arguments
 
-In order to better visualize what ReLight is providing to the scene, it is best to use ReLight's debug functions. You can find these debug functions at the bottom of the shader arguments.
+* **Ambient Intensity:** How much of the original scene lighting is kept. `1.000` being all of the ambient light from the scene, `0.000` being no ambient light from the scene.
 
-![Debug menu preview](../images/relight-debug-menu.png)
+ <div class="juxtapose" data-mode="horizontal">
+ <img src="../images/relight_al_1.000.png" data-label="1.000">
+ <img src="../images/relight_al_0.000.png" data-label="0.000">
+ </div>
 
-* **Debug Outputs:** Shows the different debug modes that ReLight provides. These are: "None," "Validation Layer (all)," "Lighting," "SSS Skin Mask," and " SSS Translucency." Each of which is self explanitory.
+* **Shadow Tracing:** Controls if and how the lights placed in ReLight will end up casting shadows. The options to choose from are "Off," "Visability Test," and "Recursive Path Tracing."
 
-* **Light Overlay:** Controls when the ReLight spheres appear on screen. The options to the user are: "Disabled," "Show while GUI is open," "Show while GUI is open and on screenshots," and "Show always." Each of which is self explanitory.
+
+
+* **Shadow Trace Quality:** Defines the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
+
+ <div class="juxtapose" data-mode="horizontal">
+ <img src="../images/relight_stqual_high.png" data-label="High">
+ <img src="../images/relight_stqual_maximum.png" data-label="Maximum">
+ </div>
+
+* **Object Thickness:** Will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows. Too high and you'll create shadows that do not exist, and too low you'll be left with next to no shading.
+
+
+
+---
+
+## Subsurface Scattering (SSS) Arguments
+
+* **Enable Subsurface Scattering:**
+
+* **Quality:**
+
+* **Saturation:**
+
+* **Scattering Radius:**
+
+* **Skin Hue:**
+
+* **SSS Skin Hue:**
+
+--- 
+
+## Light Arguments
+
+* **Active:** Controls if the light source is active or not.
+
+* **Type:** Controls what type of light ("Sphere" and "Infinite") that you are using for the specific light source you're configuring.
+
+* **Temp/Tint:** Allows the user to define the temp and tint variables of the light source.
+
+* **Intensity:** Controls the intensity of the current light that is active.
+
+* **Penumbra:** Penumbra is the effect of the shadow when its leaking outside from being partially hit by light. Configuring the argument allows you to adjust how soft the shading cast from the ReLight probes will be in the final image. The larger the penumbra, the softer the shadows will be come, and the larger your ReLight "Sphere" will be. The smaller the penumbra, the sharper the shadows will become, and the smaller your ReLight "Sphere" will be.
+
+* **Infinite: Azimoth/Elevation:** Controls the direction of the Infinite Light mode based around Azimuth and Elevation.
+
+* **Sphere: Position X Y Z:** Controls where the "Sphere" light source is positioned within the screen space. X being the horizontal axis, Y being the vertical axis, and Z being the depth axis.
+
+---
+
+## Debug Arguments
+
+* **Debug Outputs:** Shows the different debug modes that ReLight provides.
+  * **None:**
+  * **Validation Layer (all):**
+  * **Lighting:**
+  * **SSS Skin Mask:**
+  * **SSS Translucency:**
+
+* **Light Overlay:** Controls when the ReLight spheres appear on screen.
+  * **Disabled:**
+  * **Show while GUI is open:**
+  * **Show while GUI is open and on screenshots:**
+  * **Show always:**
 
 * **Light Overlay Opacity:** Controls the opacity of the ReLight spheres on screen. The value can be controlled from `0.100` to `1.000`. `1.00` being as opaque as possible, while `0.100` being as transparent/translucent as possible.
 
-![Debug output preview](../images/relight-debug.png)
+---
+
+## Preprocessor Definitions Arguments
+
+* **AMOUNT_OF_LIGHTS:** Controls the amount of lights that ReLight can be set up to use. By default this vaue is set to `2` however the maximum is `4`
 
 ---
 
-## General Shader Arguments
-
-Similar to RTGI, in the "Global" section of ReLight, you can tweak how much light from the original scene is kept and the overall parameters for the lighting and shadows.
-
-The options for you to configure are:
-
-* **Ambient Intensity:** How much of the original scene lighting is kept. `1` being all of the ambient light from the scene, `0` being no ambient light from the scene.
-
-![Ambient Light Argument 1-0](../images/ambient-light-slider.png)
-
-* **Shadow Tracing:** This argument will control if and how the lights placed in ReLight will end up casting shadows. The options to choose from are "Off," "Visability Test," and "Recursive Path Tracing."
-
-![Ambient Light Argument 1-0](../images/relight-shadow-tracing-type.png)
-
-* **Shadow Trace Quality:** Shadow Trace Quality will define the quality of the shadows that are being traced. The higher the quality, the more samples per ray are being accounted for, and therefore the sharper the shadows end up being.
-
-![Shadow Trace Quality Low - Maximum](../images/relight-shadow-quality.png)
-
-* **Object Thickness:** Will define how thick or thin the objects are within the scene. Thicker objects will cast darker and more prominent shadows, while thinner ones will often cast lighter and less prominent shadows.
-
-![Z-Thickness 0-2](../images/relight-z-thickness.png)
-
----
-
-## Light Sources and Parameters
-
-Each light source will have its category identified as "Light #." The number of light sources can be changed by going to the bottom of the shader's parameter list and selecting the `AMOUNT_OF_LIGHTS` preprocessor definition. By default, it comes with 2 lights and at most can go up to 4.
-
-* **Active:** If the light source is active or not.
-
-* **Type:** This will control what type of light that you are using for the specific light source you're configuring. You can choose between Point or Infinite.
-
-* **Temp / Tint:** This argument allows the user to set the tint and tint control of the particular light source.
-
-* **Intensity:** How bright and large the light source is within the screen space.
-
-* **Shadow Penumbra:** Penumbra is the effect of the shadow when its leaking outside from being partially hit by light. Changing the argument for "Shadow Penumbra" will allow you to adjust how soft the shading cast from your ReLight probes will be in the final image.
-
-* **Infinite Light: Azimuth/Elevation:** This will end up controling how the Infinite Light mode will end up casting light into the scene based on Azimuth and Elevation
-
-* **Point Light: Position:** This argument will control where the light source is positioned within the screen space. First is horizontal (X), second is vertical (Y), and the third is the depth (Z).
-
----
-
-## Humans and Sub-Surface Scattering
-
-Sub-Surface Scattering (SSS) is the term for the light which bounces from inside the skin or from inside translucent surfaces. It is very common with humans and other organic matter, such as plants.
-
-The shader also has a quite good simulation for that effect, despite not knowing what is organic and what isn't.
-
-Below are the parameters related to that:
-
-* **Enable Sub-Surface Scattering:** Enables the SSS function in the shader. Not all scenes require it, so having a toggle is very helpful and saves on performance.
-
-* **Subsurface Scattering Quality:** Changes the quality of the effect. Higher quality will have better light traversal on those areas, however, with a bigger performance hit.
-
-* **SSS Translucency Radius:** Defines how deep or thick the "translucent" surfaces are. With higher values bringing more brigther and colorful light inside those areas.
-
-* **SSS Saturation:** How saturated the colors in those areas are.
-
-* **SSS Diffusion Radius:** How farther the sub-surface lighting will bleed onto the nearby surfaces.
-
-* **SSS Skin Hue:** In the color wheel, defines what color / hue should be used to detect what is a fitting area for the Subsurface Scattering to consider as a skin.
-
-* **SSS Skin Hue Tolerance:** Defines how strict the color has to be to be considered as a skin part. The higher the value, the closer to that absolute color.
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
