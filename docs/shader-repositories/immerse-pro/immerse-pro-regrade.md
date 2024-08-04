@@ -6,11 +6,18 @@ parent: "iMMERSE Pro"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
 # iMMERSE Pro: ReGrade
 
-![regrade showoff](../images/regrade_main.png)
+<div class="juxtapose" data-mode="horizontal">
+ <img src="../images/regrade_header_off.png" data-label="Off">
+ <img src="../images/regrade_header_on.png" data-label="On">
+</div>
 
-iMMERSE Pro: ReGrade is a color-correction suite designed to be feature-packed enough to be close to commercial tools. With all of its available options, it has the power to bring the usability and versatility of even commercial-level tools to games. Effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
+iMMERSE Pro: ReGrade is a color-correction suite designed to be on par with standard professional tools, effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
 
 While there is no correct values and usage of this shader, people familiarized with Photography, color theory and related areas will make the best usage. However, even people with no experience can get great results by looking at the changes made being shown instantly.
 
@@ -179,3 +186,11 @@ Color balance changes the color brightness and saturation of the image's lightin
 
     * **HDR simulation:** Focuses on the brightness and color levels, blending with those to preserve tones. 
     * **Standard:** Places the vignette over the image.
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
