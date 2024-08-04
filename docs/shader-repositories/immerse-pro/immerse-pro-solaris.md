@@ -6,9 +6,19 @@ parent: "iMMERSE Pro"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
+
 # iMMERSE Pro: Solaris
 
-iMMERSE Pro: Solaris offers a powerful lens diffraction system that simulates the bloom and exposure control of a camera lens.
+<div class="juxtapose" data-mode="horizontal">
+ <img src="../images/solaris_header_off.png" data-label="Off">
+ <img src="../images/solaris_header_on.png" data-label="On">
+</div>
+
+iMMERSE Pro: Solaris is a physically based exposure and bloom shader that replicates the light that travels to the camera sensor. Solaris was built to generate a bloom that is comparable to real-world photography within your games through HDR reverse-tonemapping in order to create realistic glowing around bright light sources.
 
 ---
 
@@ -40,8 +50,16 @@ iMMERSE Pro: Solaris offers a powerful lens diffraction system that simulates th
 
 ## Preprocessor Definitions
 
-* **ENABLE_SOLARIS_REGRADE_PARITY:**
+* **ENABLE_SOLARIS_REGRADE_PARITY:** Work in progress. Check back later.
 
-* **SOLARIS_ARTISTIC_MODE:**
+* **SOLARIS_ARTISTIC_MODE:** Work in progress. Check back later.
 
 * **SOLARIS_PERF_MODE:** Activates a performance-optimized mode for Solaris, reducing computational load. This mode is useful for low-performance setups.
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
