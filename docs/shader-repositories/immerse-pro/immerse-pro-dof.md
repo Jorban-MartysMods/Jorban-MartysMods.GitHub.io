@@ -13,8 +13,8 @@ grand_parent: Shader Repositories
 # iMMERSE Pro: Depth of Field
 
 <div class="juxtapose" data-mode="horizontal">
- <img src="../images/dof_header_off.png" data-label="Off">
- <img src="../images/dof_header_on.png" data-label="On">
+ <img src="../images/dof_header_off.webp" data-label="Disabled">
+ <img src="../images/dof_header_on.webp" data-label="Enabled">
 </div>
 
 iMMERSE Pro: Depth of Field is a shader that adds depth of field to a scene. It emulates real-life camera parameters and features, allowing you to focus on specific points or objects, whether macro or micro, to meet your virtual photography needs.

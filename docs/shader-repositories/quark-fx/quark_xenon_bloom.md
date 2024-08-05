@@ -13,8 +13,8 @@ grand_parent: Shader Repositories
 # Xenon
 
 <div class="juxtapose" data-mode="horizontal" style="max-height: 820px;">
-<img src="../images/xenon_bloom_header_off.webp" data-label="OFF">
-<img src="../images/xenon_bloom_header_on.webp" data-label="ON">
+<img src="../images/xenon_bloom_header_off.webp" data-label="Disabled">
+<img src="../images/xenon_bloom_header_on.webp" data-label="Enabled">
 </div>
 
 Xenon is a highly artistic, physically-based bloom shader designed to provide dramatic lighting effects without overpowering the image.

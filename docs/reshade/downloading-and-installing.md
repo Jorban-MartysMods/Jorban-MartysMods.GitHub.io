@@ -363,7 +363,7 @@ If your ReShade install doesn't detect any new shaders installed, it's best to c
 
 You want to make sure that these two settings look identical to the configurations that are given below.
 
-![Search Paths Example](../images/downloading-and-installing/image.png)
+![Search Paths Example](../images/downloading-and-installing/image.webp)
 
 | Effect Search Path | .\ReShade-Shaders\Shaders\** |
 | Texture Search Path | .\Reshade-Shaders\Textures\** |

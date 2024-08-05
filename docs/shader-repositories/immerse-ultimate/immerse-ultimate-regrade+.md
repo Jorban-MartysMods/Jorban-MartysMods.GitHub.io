@@ -13,8 +13,8 @@ grand_parent: Shader Repositories
 # iMMERSE Ultimate: ReGrade +
 
 <div class="juxtapose" data-mode="horizontal">
-<img src="../images/regradeplus_header_off.webp" data-label="Disabled">
-<img src="../images/regradeplus_header_on.webp" data-label="Enabled">
+ <img src="../images/regradeplus_header_off.webp" data-label="Disabled">
+ <img src="../images/regradeplus_header_on.webp" data-label="Enabled">
 </div>
 
 ReGrade + is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.

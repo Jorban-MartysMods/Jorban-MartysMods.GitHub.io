@@ -98,24 +98,24 @@ Downloading any premium Marty's Mods repository requires access to Discord and P
 
 1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:59%" }
+    ![Patreon Connected Apps](./images/patreon-connected-apps.webp){: style="max-width:59%" }
 
 
 2. Once there, click the "**Discord**" button
 
-    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png)
+    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.webp)
 
 3. Afterwards, you'll be taken to a new portion of the settings menu where you can "**Connect**" a Discord account. Click the "**Connect**" button.
 
-    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.png){: style="max-width:39%" }
+    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.webp){: style="max-width:39%" }
 
 4. A new window should appear asking you to log into Discord.
 
-    ![Patreon Discord Login](./images/patreon-discord-login.png){: style="max-width:39%" }
+    ![Patreon Discord Login](./images/patreon-discord-login.webp){: style="max-width:39%" }
 
 5. Now that you are logged in, Discord will tell you about Patreon's connection to your Discord account, as well as ask you to authorize the connection. Click "**Authorize**" in the bottom right hand corner.
 
-    ![Patreon Discord Authorization](./images/discord-authorize.png){: style="max-width:80%" }
+    ![Patreon Discord Authorization](./images/discord-authorize.webp){: style="max-width:80%" }
 
 # Forcing Patreon to Provide Discord Benifits
 
@@ -123,16 +123,16 @@ Unfortunately, the Patreon and Discord intergration for larger servers and Patre
 
 0. If you are already a member of our Discord server, it's best to leave the server manually. You can do this by going to the top of Discord on the left hand side, clicking "PGHub" and then clicking "Leave Server"
 
-    ![PGHub Leave](./images/pghub_leave.png)
+    ![PGHub Leave](./images/pghub_leave.webp)
 
 1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-    ![Patreon Connected Apps](./images/patreon-connected-apps.png){: style="max-width:59%" }
+    ![Patreon Connected Apps](./images/patreon-connected-apps.webp){: style="max-width:59%" }
 
 2. Once there, click the "**Discord**" button
 
-    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.png)
+    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.webp)
 
 3. Now that you're at the connected application page for Discord, click "Join Server" for the Patreon server for "Pascal Gilcher"
 
-    ![Patreon Pascal Gilcher Join Button](./images/patreon_join_server.png){: style="max-width:60%" }
+    ![Patreon Pascal Gilcher Join Button](./images/patreon_join_server.webp){: style="max-width:60%" }

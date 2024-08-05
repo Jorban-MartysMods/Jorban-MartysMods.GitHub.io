@@ -14,8 +14,8 @@ grand_parent: Shader Repositories
 # iMMERSE Pro: Solaris
 
 <div class="juxtapose" data-mode="horizontal">
- <img src="../images/solaris_header_off.png" data-label="Off">
- <img src="../images/solaris_header_on.png" data-label="On">
+ <img src="../images/solaris_header_off.webp" data-label="Disabled">
+ <img src="../images/solaris_header_on.webp" data-label="Enabled">
 </div>
 
 iMMERSE Pro: Solaris is a physically based exposure and bloom shader that replicates the light that travels to the camera sensor. Solaris was built to generate a bloom that is comparable to real-world photography within your games through HDR reverse-tonemapping in order to create realistic glowing around bright light sources.
@@ -28,17 +28,11 @@ iMMERSE Pro: Solaris is a physically based exposure and bloom shader that replic
 
 * **Log HDR Whitepoint:** Sets the highest whitepoint Solaris will consider for bloom. Lower values cause more bloom in darker areas, while higher values shift bloom towards brighter areas.
 
-    ![Solaris Whitepoint Image](../images/solaris_log_whitepoint.png)
-
 * **Bloom Intensity:** Adjusts the overall strength of the bloom effect. Higher values result in a more pronounced bloom, while lower values produce a subtler effect.
 
 * **Bloom Radius:** Sets the width of the bloom effect. A larger radius spreads the bloom over a wider area, creating a softer look. 
 
-    ![Solaris Radius Image](../images/solaris_radius.png)
-
 * **Bloom Hazyness:** Controls the amount of haze in the bloom effect. Lower values maintain more detail where the bloom appears, while higher values increase haze and reduce clarity.
-
-    ![Solaris Hazyness Image](../images/solaris_haze.png)
 
 * **High Resolution Input:** Enables high-resolution sampling. This is useful for capturing detailed or small objects that need to glow, enhancing the precision of the bloom effect.
 

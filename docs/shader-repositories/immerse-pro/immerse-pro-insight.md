@@ -18,11 +18,11 @@ iMMERSE Pro: Insight is an image analysis shader designed to help users better u
 
   * **Black/White Clipping:** Configures the clipping function to detect black and white values. When enabled, black pixels that are clipping will be displayed as white, and white pixels that are clipping will be displayed as black.
 
-    ![B/W Clipping](../images/insight_clippingbw.png)
+    ![B/W Clipping](../images/insight_clippingbw.webp)
 
   * **RGB Clipping:** Configures the clipping function to check for red, green, and blue values individually. This allows for precise identification of clipping within each color channel.
 
-    ![RGB Clipping](../images/insight_clippingrgb.png)
+    ![RGB Clipping](../images/insight_clippingrgb.webp)
 
 ---
 
@@ -35,23 +35,23 @@ iMMERSE Pro: Insight is an image analysis shader designed to help users better u
 
 * **Luminance Histogram:** The Luminance Histogram displays the brightness levels of the image, allowing you to see the distribution of light and dark areas. This can assist in adjusting exposure and contrast.
 
-  ![LUMA HISTOGRAM](../images/insight_scope_lumahistogram.png){: style="max-width:50%" }
+  ![LUMA HISTOGRAM](../images/insight_scope_lumahistogram.webp){: style="max-width:50%" }
 
 * **RGB Histogram:** The RGB Histogram shows the distribution of red, green, and blue color channels across the image. It is essential for identifying color imbalances and ensuring accurate color representation.
 
-  ![RGB HISTOGRAM](../images/insight_scope_rgbhistogram.png){: style="max-width:50%" }
+  ![RGB HISTOGRAM](../images/insight_scope_rgbhistogram.webp){: style="max-width:50%" }
 
 * **Luminance Waveform (DX11+ and OpenGL only):** The Luminance Waveform represents the brightness levels of the image over time or across the horizontal axis. This is particularly useful for video work, ensuring consistent exposure throughout the image.
 
-  ![LUMA WAVEFORM](../images/insight_scope_lumawaveform.png){: style="max-width:50%" }
+  ![LUMA WAVEFORM](../images/insight_scope_lumawaveform.webp){: style="max-width:50%" }
 
 * **RGB Waveform (DX11+ and OpenGL only):** The RGB Waveform breaks down the image into its red, green, and blue components, showing their respective brightness levels. This is crucial for balancing color across the image and ensuring no channel is dominant.
 
-  ![RGB WAVEFORM](../images/insight_scope_rgbawaveform.png){: style="max-width:50%" }
+  ![RGB WAVEFORM](../images/insight_scope_rgbawaveform.webp){: style="max-width:50%" }
 
 * **RGB Waveform Parade (DX11+ and OpenGL only):** The RGB Waveform Parade displays the red, green, and blue channels separately, side by side. This allows for easy comparison of the individual channels, making it easier to correct color balance issues.
 
-  ![RGB PARADE WAVEFORM](../images/insight_scope_waveformparade.png){: style="max-width:50%" }
+  ![RGB PARADE WAVEFORM](../images/insight_scope_waveformparade.webp){: style="max-width:50%" }
 
 ---
 
@@ -66,16 +66,16 @@ iMMERSE Pro: Insight is an image analysis shader designed to help users better u
 
 * **RGB:** Displays the red, green, and blue values for the selected pixel. This is useful for analyzing the exact color composition at a specific point.
 
-  ![RGB INSPECTOR](../images/insight_inspector_rgb.png){: style="max-width:50%" }
+  ![RGB INSPECTOR](../images/insight_inspector_rgb.webp){: style="max-width:50%" }
 
 * **Hue Map:** Shows a map of the hue, color, and luminance values for the selected pixel. This helps in understanding the color relationships within that area.
 
-  ![HUEMAP INSPECTOR](../images/insight_inspector_huemaps.png){: style="max-width:50%" }
+  ![HUEMAP INSPECTOR](../images/insight_inspector_huemaps.webp){: style="max-width:50%" }
 
 * **Magnifying Glass:** Provides a zoomed-in view of the selected pixel and its surrounding area, allowing for detailed inspection of image elements.
 
-  ![MAGNIFYING INSPECTOR](../images/insight_inspector_magnifying.png){: style="max-width:50%" }
+  ![MAGNIFYING INSPECTOR](../images/insight_inspector_magnifying.webp){: style="max-width:50%" }
 
 * **FFT (DX11+ and OpenGL Only):** Performs a Fast Fourier Transform on the selected pixel and its surroundings, offering insights into the frequency components of that area.
 
-  ![FFT INSPECTOR](../images/insight_inspector_fft.png){: style="max-width:50%" }
+  ![FFT INSPECTOR](../images/insight_inspector_fft.webp){: style="max-width:50%" }

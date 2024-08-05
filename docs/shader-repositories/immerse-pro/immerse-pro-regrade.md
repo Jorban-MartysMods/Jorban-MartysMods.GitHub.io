@@ -13,8 +13,8 @@ grand_parent: Shader Repositories
 # iMMERSE Pro: ReGrade
 
 <div class="juxtapose" data-mode="horizontal">
- <img src="../images/regrade_header_off.png" data-label="Off">
- <img src="../images/regrade_header_on.png" data-label="On">
+ <img src="../images/regrade_header_off.webp" data-label="Disabled">
+ <img src="../images/regrade_header_on.webp" data-label="Enabled">
 </div>
 
 iMMERSE Pro: ReGrade is a color-correction suite designed to be on par with standard professional tools, effectively removing the step of toggling between a color-correction software and the game to finish editing, making it all real-time and hassle-free.
