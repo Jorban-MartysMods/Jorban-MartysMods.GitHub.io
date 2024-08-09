@@ -365,8 +365,8 @@ You want to make sure that these two settings look identical to the configuratio
 
 ![Search Paths Example](../images/downloading-and-installing/image.webp)
 
-| Effect Search Path | .\ReShade-Shaders\Shaders\** |
-| Texture Search Path | .\Reshade-Shaders\Textures\** |
+| Effect Search Path | .\ReShade-Shaders\Shaders\\** |
+| Texture Search Path | .\Reshade-Shaders\Textures\\** |
 
 {: .note }
 If you do not have a free slot to add a search path for, you can click the "**+**" icon located directly under the search paths!

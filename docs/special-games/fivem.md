@@ -35,7 +35,7 @@ Navigate to your GTAV folder by using our [guide for locating your game's execut
 | reshade.ini | ReShade Settings File| 
 | reshade-shaders | ReShade Shaders & Textures Folder |
 
-![GTAV ReShade Install Files](../images/fivem/gtav-reshade-install-files.webp)
+![GTAV ReShade Install Files](../images/fivem_gtav_reshade_files.webp)
 
 ---
 
@@ -43,7 +43,7 @@ Navigate to your GTAV folder by using our [guide for locating your game's execut
 
 In order to locate your FiveM location, please utilize our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)!
 
-![FiveM File Location](../images/fivem/fivem-file-location.webp)
+![FiveM File Location](../images/fivem_file_location.webp)
 
 ---
 
@@ -51,9 +51,9 @@ In order to locate your FiveM location, please utilize our [guide for locating y
 
 Once you have located your FiveM Installation folder, enter the `FiveM Application Data` folder, and then into your `plugins` directory.
 
-![FiveM appdata Location](../images/fivem/fivem-appdata-location.webp)
+![FiveM appdata Location](../images/fivem_appdata_location.webp)
 
-![FiveM plugins Location](../images/fivem/fivem-plugins-location.webp)
+![FiveM plugins Location](../images/fivem_plugins_location.webp)
 
 ---
 
@@ -66,7 +66,7 @@ Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV direct
 | reshade.ini | ReShade Settings File| 
 | reshade-shaders | ReShade Shaders & Textures Folder |
 
-![FiveM reshade install Location](../images/fivem/fivem-reshade-install-location.webp)
+![FiveM reshade install Location](../images/fivem_reshade_install_location.webp)
 
 ---
 
@@ -74,17 +74,24 @@ Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV direct
 
 Launch FiveM and press F8 on your keyboard to read the message in your log. FiveM should present you with the error:
 
-![Error Screenshot](../images/fivem/fivem_reshade5_bs.webp)
+![Error Screenshot](../images/fivem_reshade_error.webp)
 
-This error holds all of the steps needed in order to fix the issue that you are facing. In Green text will be the location of your "CitizenFX.ini" file. You will need to open this file and copy the entire error from "[Addons]" downards in order to solve the issue. If this is not copied exactly how it is written in your console, then you will not be able to fix the issue. You can copy and paste these two lines into your "CitizenFX.ini" file, however, you MUST use your own ID instead of the dummy ID given:
+This error holds all of the steps needed in order to fix the issue that you are facing. In Green text will be the location of your "CitizenFX.ini" file. You will need to open this file and copy the entire error from "[Addons]" downwards in order to solve the issue.
+
+{: .warning }
+If this is not copied **EXACTLY** how it is written in your console, then you will not be able to fix the issue. 
+
+You can copy and paste these two lines into your "CitizenFX.ini" file, however, you MUST use your own ID instead of the dummy ID given:
 
 ```
 [Addons]
 ReShade5=ID:XXXXXX acknowledged that ReShade 5.x has a bug that will lead to game crashes
 ```
 
+If the issue still persists, double check that your ID is 100% identical to the ID that exists within the error code provided to you by FiveM
+
 ---
 
-## Restart FiveM and enable "Fix UI Lag"
+## Restart FiveM and Enable "Fix UI Lag"
 
 Restart the FiveM client and then go into your FiveM settings in order to enable FiveM's "Fix UI Lag" option. Afterwards, restart your game a final time.

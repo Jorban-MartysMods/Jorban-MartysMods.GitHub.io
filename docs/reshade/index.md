@@ -6,6 +6,6 @@ has_children: true
 has_toc: true
 ---
 
-# ReShad Guides
+# ReShade Guides
 
 Below will be all of our basic guides for learning and understanding ReShade.
