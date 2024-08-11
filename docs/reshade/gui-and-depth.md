@@ -18,7 +18,7 @@ The "Home" tab in ReShade houses several buttons and menus that you can interact
 
 ---
 
-# Preset Selection Bar
+## Preset Selection Bar
 
 At the top of the ReShade "Home" menu will be preset selection section bar:
 
@@ -28,7 +28,7 @@ This bar allows the user to select, create, save manually, or configure their pr
 
 ---
 
-# Shader List
+## Shader List
 
 The area below the preset selection bar is ReShade's shader list:
 
@@ -38,15 +38,17 @@ This list will provide the user with all of the shaders that is installed for Re
 
 ---
 
-# Edit Pre-processor Definitions
+## Edit Pre-processor Definitions
 
-Below the shader list will be the "Edit Global Preprocessor Definitions." This button allows you to control aspects of shaders and depth before they are loaded by ReShade:
+Below the shader list will be the "Edit Global Preprocessor Definitions."
 
 ![Global Pre-processor Definitions](../images/gui-and-depth/rsui_globalpreprocessors.webp){: style="max-width:65%" }
 
+This button allows you to control aspects of shaders and depth before they are loaded by ReShade:
+
 ---
 
-# Shader Parameters
+## Shader Parameters
 
 The area below the shader list and edit pre-processor definitions button is the shader parameter list;
 
