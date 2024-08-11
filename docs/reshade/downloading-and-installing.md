@@ -5,43 +5,34 @@ parent: ReShade
 nav_order: 1
 ---
 
-# Downloading and Installing ReShade
+# Downloading ReShade
 
-ReShade enhances your video game visuals by adding effects like improved color depth and sharper details. It's compatible with most games and works with graphics APIs including DirectX, OpenGL, and Vulkan.
-
-This guide is here to help you quickly download and install ReShade, ensuring you can easily upgrade your gaming experience. Follow the steps below to get started.
+ReShade is a open sourced, generic, post-processing tool that allows users to enhance, define, and create the looks that they desire from their game. Being generic, ReShade allows for these modifications through most games avaliable!
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Downloading ReShade</summary>
-
-The latest version of ReShade will always be avaliable at [ReShade's Homepage](https://reshade.me/#download).
-
-![ReShade Homepage](../images/downloading-and-installing/rs_homepage.webp){: style="max-width:90%" }
-
-Avalible for download are two builds of ReShade that you can select. The Standard, and Full Add-on Support build. Below, you can find information specifically on what differientiates the two builds, and the common usecases for them.
+Avalible for download are two builds of ReShade that you can select. The Standard, and Full Add-on Support build. Below, you can find information specifically on what differientiates the two builds, and the common usecases for them. The latest version of ReShade will always be avaliable at [ReShade's Homepage](https://reshade.me/#download).
 
 ![ReShade Download Options](../images/downloading-and-installing/rs_download.webp){: style="max-width:90%" }
 
 ## Standard ReShade Build (Download ReShade x.x.x)
 
-The Standard Build of ReShade is the most common version. It is ideal for online games with strict anti-cheat mechanisms (e.g., Dead by Daylight, PUBG, Apex Legends.) This build is used for online games due to its limitations to features to prevent misuse and cheating in online games. 
-
-If you are unsure of what build to pick, this is likely the best choice!
+The Standard Build of ReShade is the most common version. It is ideal for online games with strict anti-cheat mechanisms (e.g., Dead by Daylight, PUBG, Apex Legends.) This build is used for online games due to its limitations to features to prevent misuse and cheating in online games. If you are unsure of what build to pick, this is likely the best choice!
 
 ## Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
 
-The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems (e.g., Final Fantasy XXIV, World of Warcraft, Baldur's Gate 3.) This build will offer the full feature set and freedom for creating presets with various shaders and add-ons.
+The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems (e.g., Final Fantasy XXIV, World of Warcraft, Baldur's Gate 3.) This build will offer the full feature set and freedom for creating presets with various shaders and add-ons. If your game is offline, it's best to choose this build to prevent issues down the line!
 
-If your game is offline, it's best to choose this build to prevent issues down the line!
+---
 
-</details>
+# Installing ReShade
+
+Each game will have their own process for injecting ReShade. Below will go over the different ways that you can inject ReShade.
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Installing ReShade with the ReShade Installer</summary>
+<summary>ReShade Installer</summary>
 
 ## Selecting Your Game
 
@@ -158,7 +149,7 @@ Other potential issues include:
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Manually Installing ReShade</summary>
+<summary>Manual Install</summary>
 
 ## Identifying Game Architecture and Rendering API
 
@@ -225,7 +216,7 @@ Upon completion, your game should launch with ReShade injected!
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Manually Injecting ReShade</summary>
+<summary>Manual Injection</summary>
 
 Certain games do not support automatic ReShade injection during runtime.<br>This is especially common for UWP (Microsoft Store) games, which often disallow automatic injection. 
 
@@ -322,7 +313,7 @@ After you've hit enter, you will need to launch your game. If successful, ReShad
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Manually Installing Shaders for ReShade</summary>
+<summary>Manual Shader Install</summary>
 
 {: .note }
 This guide assumes that you already have ReShade installed and working in your game.
