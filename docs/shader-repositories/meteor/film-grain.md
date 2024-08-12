@@ -34,9 +34,9 @@ METEOR's Film Grain is designed to add a layer of grain to your images, mimickin
 
 ## Analog Film Grain Parameters
 
-These parameters will only work under the Analog Film grain type:
+These parameters will only work under the Analog Film Grain type:
 
-* **Grain Size:** Adjust the size of the grain particles. Smaller values create finer grain, while larger values produce coarser, more noticeable grain.
+* **Grain Size:** Adjusts the size of the grain particles. Smaller values create finer grain, while larger values produce coarser, more noticeable grain.
 
 * **Analog Film Gamma:** Adjusts the gamma curve of the grain, altering how light and dark areas of the image are affected.
 
