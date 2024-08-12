@@ -14,4 +14,4 @@ The Halftone shader is designed to simulate the halftone printing process, a tec
 
 ## Arguments
 
-* **Grid Scale:** This setting allows you to adjust the scale of the dot grid, controlling the size and spacing of the halftone dots. Smaller values will produce finer dots with more detail, while larger values will create coarser dots with a more pronounced halftone effect.
+* **Grid Scale:** Adjusts the scale of the dot grid, controlling the size and spacing of the halftone dots. Smaller values will produce finer dots with more detail, while larger values will create coarser dots with a more pronounced halftone effect.
