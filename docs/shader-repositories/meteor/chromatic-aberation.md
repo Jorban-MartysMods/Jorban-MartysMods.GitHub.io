@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Chromatic Aberration
 
-METEOR's Chromatic Aberration simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses. d
+METEOR's Chromatic Aberration simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses.
 
 ---
 
@@ -27,4 +27,4 @@ METEOR's Chromatic Aberration simulates chromatic aberration in a way that close
 
 * **Use HDR:** Toggles reverse tonemapped HDR processing for the chromatic aberration effect.
 
-* **Use Post Filtering:** When enabled, this setting applies additional post-processing to smooth out the chromatic aberration effect. While enabled, a layer of filtering will be applied in order to reduce harsh transitions and artifacts. While disabled, the shader will be applied without any additional filtering and can cause a more sharp and jagged appearance.
+* **Use Post Filtering:** When enabled, this setting applies additional post-processing to smooth out the chromatic aberration effect. While enabled, a layer of filtering will be applied in order to reduce harsh transitions and artifacts. When disabled, the shader will be applied without any additional filtering, which can cause a sharper and more jagged appearance.
