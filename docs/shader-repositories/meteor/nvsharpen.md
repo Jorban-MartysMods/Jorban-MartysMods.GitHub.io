@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # NVSharpen
 
-METEOR's NVSharpen shader is a port of Nvidia's NVSharpen filter from the NIS (Nvidia Image Scaling) Library. This shader is designed to enhance image sharpness, bringing out finer details and improving the overall clarity of the visual content. While based on Nvidia's original filter, this implementation includes some artistic liberties, offering additional flexibility and control.
+METEOR's NVSharpen is a port of Nvidia's NVSharpen filter from the NIS (Nvidia Image Scaling) Library. This shader is designed to enhance image sharpness, bringing out finer details and improving the overall clarity of the visual content. While based on Nvidia's original filter, this implementation includes some artistic liberties, offering additional flexibility and control.
 
 ---
 
