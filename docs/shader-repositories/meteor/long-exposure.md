@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Long Exposure
 
-METEOR's Long Exposure is a straightforward yet powerful tool that simulates long exposure photography within your digital projects. Long exposure photography is a technique where the camera's shutter remains open for an extended period, allowing more light to hit the sensor and creating effects like light trails, motion blur, and smooth water surfaces. This shader replicates those effects by stacking frames over a specified exposure time, giving you the ability to create simular effects with ease.
+METEOR's Long Exposure is a straightforward yet powerful tool that simulates long exposure photography within your digital projects. Long exposure photography is a technique where the camera's shutter remains open for an extended period, allowing more light to hit the sensor and creating effects like light trails, motion blur, and smooth water surfaces. This shader replicates those effects by stacking frames over a specified exposure time, giving you the ability to create similar effects with ease.
 
 ---
 
