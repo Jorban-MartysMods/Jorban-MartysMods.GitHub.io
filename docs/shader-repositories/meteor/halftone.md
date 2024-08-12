@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Halftone
 
-The Halftone shader is designed to simulate the halftone printing process, a technique commonly used in traditional printing to create gradients and shading through the use of dots. This shader reproduces that distinctive look, allowing you to apply a halftone effect to your images or scenes.
+METEOR's Halftone is designed to simulate the halftone printing process, a technique commonly used in traditional printing to create gradients and shading through the use of dots. This shader reproduces that distinctive look, allowing you to apply a halftone effect to your images or scenes.
 
 ---
 
