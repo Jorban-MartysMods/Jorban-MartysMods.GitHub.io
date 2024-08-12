@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Film Grain
 
-METEOR's Film Grain Shader is designed to add a layer of grain to your images, mimicking the look of analog film or the noise inherent in digital sensors. This effect can bring a cinematic or nostalgic feel to your visuals, depending on the settings you choose.
+METEOR's Film Grain is designed to add a layer of grain to your images, mimicking the look of analog film or the noise inherent in digital sensors. This effect can bring a cinematic or nostalgic feel to your visuals, depending on the settings you choose.
 
 ---
 
