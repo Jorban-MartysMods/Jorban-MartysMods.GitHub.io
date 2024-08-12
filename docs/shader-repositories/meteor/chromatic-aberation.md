@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Chromatic Aberration
 
-The **METEOR: Chromatic Aberration** shader is a highly sophisticated effect that simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses. This shader was previously known as YACA22 - *Yet Another Chromatic Aberration '22*, but it has evolved into a far more advanced tool, setting itself apart by addressing common mistakes in how chromatic aberration is typically handled in digital imagery.
+METEOR's Chromatic Aberration shader simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses. d
 
 ---
 
