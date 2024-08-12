@@ -16,4 +16,4 @@ METEOR's NVSharpen is a port of Nvidia's NVSharpen filter from the NIS (Nvidia I
 
 * **Sharpen Intensity:** Controls the overall intensity of the sharpening effect.
 
-* **Edge Detection Threshold:** Adjusts the sensitivity of the edge detection algorithm. A higher threshold will limit sharpening to only the most prominent edges, reducing the likelihood of noise being sharpened. A lower threshold will cause the shader to sharpen more areas of the image, which can propigate more detail but may also introduce unwanted artifacts.
+* **Edge Detection Threshold:** Adjusts the sensitivity of the edge detection algorithm. A higher threshold will limit sharpening to only the most prominent edges, reducing the likelihood of noise being sharpened. A lower threshold will cause the shader to sharpen more areas of the image, which can propagate more detail but may also introduce unwanted artifacts.
