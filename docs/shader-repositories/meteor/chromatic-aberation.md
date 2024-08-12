@@ -8,7 +8,7 @@ grand_parent: Shader Repositories
 
 # Chromatic Aberration
 
-METEOR's Chromatic Aberration shader simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses. d
+METEOR's Chromatic Aberration simulates chromatic aberration in a way that closely mimics real-world camera lenses. Unlike most chromatic aberration effects in games, which often introduce unrealistic rainbow gradients and are applied incorrectly after tonemapping, this shader ensures that the effect is applied as it should be, before tonemapping, and uses a more accurate method to simulate how light behaves through different types of lenses. d
 
 ---
 
