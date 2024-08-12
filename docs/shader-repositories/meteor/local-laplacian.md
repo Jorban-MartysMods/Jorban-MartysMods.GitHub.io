@@ -14,4 +14,4 @@ Local Laplacian filtering is known for its exceptional ability to bring out deta
 
 ## Parameters
 
-* **Local Contrast Strength:** This setting controls the intensity of the local contrast enhancement. Increasing this value emakes details more pronounced, while decreasing it can soften the image.
+* **Local Contrast Strength:** Controls the intensity of the local contrast enhancement. Increasing this value emakes details more pronounced, while decreasing it can soften the image.
