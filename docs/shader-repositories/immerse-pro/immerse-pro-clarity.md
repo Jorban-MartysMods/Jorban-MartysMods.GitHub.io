@@ -12,10 +12,10 @@ grand_parent: Shader Repositories
 
 # iMMERSE Pro: Clarity
 
- <div class="juxtapose" data-mode="horizontal">
- <img src="../images/clarity_header_off.webp" data-label="Disabled">
- <img src="../images/clarity_header_on.webp" data-label="Enabled">
- </div>
+<div class="juxtapose" data-mode="horizontal">
+<img src="../images/clarity_header_off.webp" data-label="Disabled">
+<img src="../images/clarity_header_on.webp" data-label="Enabled">
+</div>
 
 iMMERSE Pro: Clarity is a shader based on the sharpening technique used in Photoshop's Clarity tool. Its main goal is to highlight and restore details that are either already in the image or hidden. Unlike other shaders, Clarity has features to avoid haloing and other artifacts.
 
