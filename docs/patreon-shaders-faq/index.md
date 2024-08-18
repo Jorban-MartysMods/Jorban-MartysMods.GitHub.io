@@ -8,11 +8,11 @@ nav_order: 5
 
 Everything provided under Marty's public (qUINT, iMMERSE, METEOR) and Patreon repositories (iMMERSE Pro & iMMERSE Ultimate) are shaders for the ReShadeFX shader language. Designed for and applied through the injectable application ReShade. These shaders exist to enhance, define, or drastically change the way that you play your games. Providing the tools that you need in order to cultivate the gameplay experience that you want.
 
-Down the line, there plans to be presets that Patreon's can use, as well as vote on for upcoming relases. However, development is the main priority of the Patreon project, and development for those presets has slowed down.
+Down the line, there are plan to develop presets that Patreon's can use, as well as vote on upcoming relases. However, development of shaders is the main priority of the Patreon project, and creation of presets have slowed down.
 
 ## iMMERSE:
 
-iMMERSE is the core repository of shaders from Marty's Mods and are available [on GitHub](https://github.com/martymcmodding/iMMERSE). The iMMERSE repository includes:
+iMMERSE is the core repository of shaders from Marty's Mods and are available for free [on GitHub](https://github.com/martymcmodding/iMMERSE).
 
 | **iMMERSE: Shaders** | **Description:** |
 | [Launchpad](https://www.martysmods.com/launchpad/) | A shader designed to process information for both RTGI and ReLight |
@@ -24,7 +24,7 @@ iMMERSE is the core repository of shaders from Marty's Mods and are available [o
 
 ## iMMERSE Pro:
 
-iMMERSE Pro is a premium repository of shaders provided by Marty's Mods, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg). For $5 USD, you can access this repository, which currently features:
+iMMERSE Pro is a premium repository of shaders provided by Marty's Mods, available to [the "Raytracers" tier members from Pascal's Patreon](http://www.patreon.com/mcflypg). For $5 USD, you can access this repository.
 
 | **iMMERSE Pro: Shaders** | **Description:** |
 | [RTGI](https://www.martysmods.com/rtgi/) | State of the art ray traced global illumination for ReShade |
@@ -47,6 +47,22 @@ iMMERSE Ultimate is an aditional premium repository of shaders and addons provid
 | [LUT Manager (Add-On)](https://guides.martysmods.com/docs/shader-repositories/immerse-ultimate/immerse-ultimate-lut-manager/) | An addon and shader combo that allows you to organize your luts into an individual folder without needing a massive list of shaders for them |
 
 ---
+
+## METEOR:
+
+METEOR is a tertiary repository of shaders developed by Marty and avaliable for free [on GitHub](https://github.com/martymcmodding/METEOR/). This collection includes unique shaders created for specific use cases or shaders that don't typically belong in a standard repository. Each shader in METEOR serves a particular purpose, offering specialized effects that might not be found elsewhere.
+
+| **METEOR: Shaders** | **Description** |
+| [Chromatic Aberration](https://guides.martysmods.com/docs/shader-repositories/meteor/chromatic-aberation/) | An overengineered chromatic aberration shader that simulates lens effects with high accuracy |
+| [Film Grain](https://guides.martysmods.com/docs/shader-repositories/meteor/film-grain/) | Adds realistic film grain or digital sensor noise to your visuals, with various customization options |
+| [Halftone](https://guides.martysmods.com/docs/shader-repositories/meteor/halftone/) | Simulates the halftone printing process, adding a classic print-like texture to your images |
+| [Local Laplacian](https://guides.martysmods.com/docs/shader-repositories/meteor/local-laplacian/) | Provides local contrast enhancement using a fast implementation of Local Laplacian filtering |
+| [Long Exposure](https://guides.martysmods.com/docs/shader-repositories/meteor/long-exposure/) | Simulates long exposure photography by stacking frames over a specified exposure time |
+| [NVSharpen](https://guides.martysmods.com/docs/shader-repositories/meteor/nvsharpen/) | A port of Nvidia's sharpen technique |
+| [Toddyhancer](https://guides.martysmods.com/docs/shader-repositories/meteor/toddyhancer/) | A humorous shader highlighting the exaggerated claims of the "revolutionary" Toddyhancer preset |
+
+---
+
 
 # Downloading & Installing Process
 
