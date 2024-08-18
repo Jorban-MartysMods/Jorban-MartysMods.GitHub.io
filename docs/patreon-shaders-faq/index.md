@@ -117,9 +117,9 @@ Downloading any premium Marty's Mods repository requires access to Discord and P
 
     ![Patreon Discord Authorization](./images/discord-authorize.webp){: style="max-width:80%" }
 
-# Forcing Patreon to Provide Discord Benifits
+# Forcing Patreon to Provide Discord Benefits
 
-Unfortunately, the Patreon and Discord intergration for larger servers and Patreon communities is slow. In order to force Patreon to provide you the benifits that you've paid for on our Discord (for downloading our shaders and being a part of our community) you can follow the steps provided below:
+Unfortunately, the Patreon and Discord intergration for larger servers and Patreon communities is slow. In order to force Patreon to provide you the benefits that you've paid for on our Discord (for downloading our shaders and being a part of our community) you can follow the steps provided below:
 
 0. If you are already a member of our Discord server, it's best to leave the server manually. You can do this by going to the top of Discord on the left hand side, clicking "PGHub" and then clicking "Leave Server"
 
