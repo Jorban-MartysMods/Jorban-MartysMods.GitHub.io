@@ -5,85 +5,86 @@ nav_order: 98
 parent: Additional Guides
 ---
 
-## **Using ReShade with Other Graphics Injection Tools**
+# **Using ReShade with Other Graphics Injection Tools**
 
-Graphics injection tools are frequently used to make large modifications to games or applications, allowing users to customize the visual output of their experience. These tools typically come in the form of a `.dll` file and may conflict with each other if they lack proper naming conventions or graphics injection proxy systems.
-
-The following guides will provide instructions on how to install and use ReShade in conjunction with graphics injection tools such as ENB and SpecialK.
+Graphics injection tools, such as ENB and SpecialK, allow users to make significant modifications to a game's visuals, enhancing and customizing the visual experience. These tools typically involve injecting `.dll` files into the game, which can sometimes conflict with each other if not set up correctly. This guide will walk you through the process of installing and using ReShade alongside other graphics injection tools like ENB and SpecialK, ensuring smooth integration and optimal performance.
 
 ---
 
 <details markdown="block" class="details-tree">
 <summary>ENBSeries</summary>
 
-ENBSeries is a project developed by Boris Vorontsov that allows users to massively overhaul the visuals of games it is built for. It is a powerful graphics modification tool that can greatly enhance the visual quality of it's games. One of the key features of ENBSeries is its flexibility and customization options. Users can tweak various parameters and settings to achieve their desired visual style. This level of customization allows for a highly personalized gaming experience, tailored to individual preferences.
-
----
-
 ## Installing ENB alongside ReShade:
 
-When multiple mods are combined in a single game, various issues can arise, such as conflicting file names or simultaneous access to internal game resources, that can result in glitches or crashes.
+ENBSeries, developed by Boris Vorontsov, is a powerful tool for overhauling game visuals. It provides extensive customization options, allowing users to tweak various parameters to achieve their desired visual style. While ENBSeries offers a wide range of features, it must be configured correctly when used with ReShade to prevent conflicts.
 
-ENBSeries is commonly used in conjunction with ReShade to provide additional customization options for game visuals.
-
-Unlike ReShade, ENBSeries is not a generic tool. Each game requires its own specific version of ENBSeries for compatibility. However, it offers access to a wider range of internal game resources that are tailored to that specific game, such as time of day, information about textures ingame, skin detection, and more.
+ENBSeries is often used in conjunction with ReShade to further enhance game visuals. However, unlike ReShade, ENBSeries is game-specific, requiring a unique version for each supported game. This specificity allows ENBSeries to access game resources tailored to that particular game, such as time-of-day settings, texture information, and more.
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Loading ReShade and ENB via ENBProxy</summary>
+<summary>Installing via ENBProxy</summary>
 
-1. Download [ENBSeries](http://enbdev.com/download.html) for the game you want to use. It's recommended to look for websites that already provide ENB presets, as the default download only includes a few example shaders.
+1. **Download ENBSeries:** Visit the [ENBSeries website](http://enbdev.com/download.html) and download the version specific to your game. Consider searching for pre-made ENB presets, as the default download includes only a few example shaders.
 
-2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [our guide on finding your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance.
+2. **Extract Files:** Unzip the downloaded file and extract its contents into your game's root folder. If you’re unsure where the root folder is located, refer to [this guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-3. Rename the ReShade `.dll` file to `reshade.dll`.
+3. **Rename ReShade DLL:** Rename the ReShade `.dll` file (typically named `dxgi.dll` or `d3d11.dll`) to `reshade.dll`.
 
-4. Open the `enbseries.ini` file and edit the following lines:
+4. **Edit enbseries.ini:** Open the `enbseries.ini` file and modify the following lines:
+```ini
+   EnableProxyLibrary=true
+   InitProxyFunctions=false
+   ProxyLibrary=reshade.dll
 ```
-EnableProxyLibrary=true
-InitProxyFunctions=false
-ProxyLibrary=reshade.dll
-```
-5.  Save the edits you made.
 
 {: .warning }
-Make sure to follow the capitalization as shown in the guide, otherwise you will have problems loading ENB or ReShade.
-
+Ensure you follow the exact capitalization as shown. Incorrect capitalization may prevent ENB or ReShade from loading properly.
 
 </details>
 
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Loading ReShade and ENB via Ultimate ASI Loader</summary>
+<summary>Installing via Ultimate ASI Loader</summary>
 
-For older DirectX 9 games we might need some other mods to make everything work together, one of those is [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader).
+For older DirectX 9 games, additional tools may be required to ensure compatibility. One such tool is the [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader).
 
-1. Download the latest [ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/) release.
+1. **Download Ultimate ASI Loader:** Get the latest version of [ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/).
 
-2. Extract the contents of the downloaded zip/rar file into the root folder of your game. If you're unsure about the location of the root folder, refer to [this guide](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance.
+2. **Extract Files:** Unzip the downloaded file and extract its contents into your game’s root folder. If needed, refer to [our guide on finding your game's root folder.](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)
 
-3. If there are conflicting file names for the ASI Loader file, you can use one of the examples listed below.
+3. **Resolve File Name Conflicts:** If there are conflicting file names, use one of the alternative ASI Loader file names listed below:
 
-![ASI File names](../images/using-reshade-with-other-grapahics-injection-tools/ASI_filenames.webp)
+    * d3d8.dll
+    * d3d9.dll
+    * d3d11.dll
+    * ddraw.dll
+    * dinput.dll
+    * dinput8.dll
+    * dsound.dll
+    * msacm32.dll
+    * msvfw32.dll
+    * version.dll
+    * vobisFile.dll
+    * wininet.dll
+    * winmm.dll
+    * xlive.dll
 
-4. create a new folder called `plugins` in the root folder of the game.
+4. **Create Plugins Folder:** In your game’s root folder, create a new folder named `plugins`.
 
-5. Move the ReShade files to the plugins folder, these being:
-```
-reshade-shaders
-ReShade.ini
-ReshadePreset.ini
-d3d9.dll
-```
-6. After moving the ReShade files to the plugins folder, change the extension on the ReShade file from `d3d9.dll` to `d3d9.asi`
+5. **Move ReShade Files:** Move the following ReShade files into the `plugins` folder:
+   * `reshade-shaders`
+   * `ReShade.ini`
+   * `ReshadePreset.ini`
+   * `d3d9.dll`, `d3d10.dll`, `d3d11.dll`, `d3d12.dll`, or `dxgi.dll` (depending on your game’s DirectX version)
 
-7. Download and extract the ENBSeries files into the root folder of the game.
+6. **Change ReShade DLL Extension:** Change the extension of the ReShade DLL file to `.asi`.
 
-{: .important  }
+7. **Install ENBSeries:** Download and extract the ENBSeries files into the game’s root folder.
 
-The ReShade installation is now being loaded from the plugins folder, every new shader and texture added should go into ``GAME_FOLDER/plugins/reshade-shaders/`` and ReShade Addons should go into ``GAME_FOLDER/plugins/``
+{: .important }
+With ReShade now loaded from the `plugins` folder, any new shaders or textures should be placed in `GAME_FOLDER/plugins/reshade-shaders/`. ReShade Addons should be placed in `GAME_FOLDER/plugins/`.
 
 </details>
 
@@ -94,37 +95,28 @@ The ReShade installation is now being loaded from the plugins folder, every new 
 <details markdown="block" class="details-tree">
 <summary>SpecialK</summary>
 
-SpecialK is a project developed by Kaldaien that aims to improve game performance and provide additional features for PC games, such as fine tunning HDR settings and providing support for custom textures. It is a powerful tool that can help optimize games and enhance the overall gaming experience. 
+SpecialK, developed by Kaldaien, is a versatile tool designed to enhance game performance and provide additional features for PC games. It offers capabilities such as fine-tuning HDR settings, improving frame pacing, and supporting custom textures. SpecialK can significantly optimize your gaming experience, but when used alongside ReShade, proper setup is crucial to avoid potential conflicts.
 
 ---
 
 ## Installing ReShade alongside SpecialK
 
-As with any combination of mods, installing SpecialK with ReShade may cause issues with games ranging from graphical glitches to stutters, bad performance and crashes.
+1. **Download and Install Special K Injection Frontend (SKIF):** Begin by [downloading SKIF](https://www.special-k.info/), which is the front-end for injecting SpecialK into your games.
 
----
+2. **Launch SKIF:** The installer will place a shortcut on your desktop. Launch SKIF, and it will automatically scan and list all the games installed on your PC.
 
-<details markdown="block" class="details-tree">
-<summary>Loading ReShade and SpecialK</summary>
+3. **Install ReShade:** Follow the standard procedure for installing ReShade into your game. Ensure that ReShade is correctly installed before proceeding.
 
-1. Download and install [Special K Injection Frontend (SKIF)](https://www.special-k.info/).
+4. **Launch the Game through SKIF:** In the SKIF interface, double-click on the game you want to run. This will start the game with both SpecialK and ReShade active.
 
-2. The installer will create a shortcut on your desktop. Upon the first launch, it will automatically detect and list all the games installed on your PC.
+5. **Access the SpecialK GUI:** Once the game is running, you can access the SpecialK configuration menu by pressing Ctrl + Shift + Backspace together at the same time.
 
-3. Install ReShade following the usual installation process.
+     ![SpecialK Shortcut](../images/using-reshade-with-other-grapahics-injection-tools/sk-keybind.webp){: style="max-width:50%" }
 
-4. Double-click on the game in the SpecialK launcher, and it will launch with both SpecialK and ReShade.
+For more detailed information, refer to [the official SpecialK wiki](https://wiki.special-k.info/en/SpecialK/ReShade) page dedicated to ReShade integration.
 
-5. To open the SpecialK GUI, press `Ctrl + Shift + Backspace`.
-
-![SpecialK Shortcut](../images/using-reshade-with-other-grapahics-injection-tools/crtl_shift_backspace.webp)
-
-For more information check out he official SpecialK [wiki](https://wiki.special-k.info/en/SpecialK/ReShade) page for ReShade
-
-{: .warning}
-
-Do not use SpecialK in multiplayer games.
+{: .warning }
+Do not use SpecialK in multiplayer games as it may trigger anti-cheat mechanisms, leading to potential bans.
 
 </details>
 
-</details>
