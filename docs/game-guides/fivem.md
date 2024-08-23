@@ -103,7 +103,7 @@ Restart the FiveM client and then go into your FiveM settings in order to enable
 
 * ReShade "No effect files" error: This error occurs because the user either had a broken ReShade.ini file already or has messed something up along the way. The easiest fix is to go into the "Settings" tab of ReShade and fill in effect and texture search paths with their standard defaults:
 
-    ![effect search path fivem](../docs/game-guides/images/fivem-no-effects.png)
+    ![effect search path fivem](../docs/game-guides/images/fivem-no-effects.webp)
 
     | .\reshade-shaders\Shaders\\** | Effect Search Path |
     | .\reshade-shaders\Textures\\** | Texture Search Path |
