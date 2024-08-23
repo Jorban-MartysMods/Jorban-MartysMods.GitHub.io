@@ -105,5 +105,7 @@ Restart the FiveM client and then go into your FiveM settings in order to enable
 
     ![effect search path fivem](../docs/game-guides/images/fivem-no-effects.png)
 
-    | .\ReShade-Shaders\Shaders\*** | Effect Search Path |
-    | .\ReShade-Shaders\Textures\*** | Texture Search Path |
+    | .\reshade-shaders\Shaders\\** | Effect Search Path |
+    | .\reshade-shaders\Textures\\** | Texture Search Path |
+
+    ![Search Paths Example](../docs/reshade/images/downloading-and-installing/image.webp)
