@@ -20,6 +20,8 @@ The Full Add-On Support Build of ReShade is best for offline games or games with
 
 ![ReShade Download Options](../docs/reshade/images/downloading-and-installing/rs_download.webp){: style="max-width:90%" }
 
+---
+
 # Installing ReShade
 
 Each game will have their own process for injecting ReShade. Below will go over the different ways that you can inject ReShade.

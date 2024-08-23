@@ -3,6 +3,7 @@ title: ReShade GUI
 layout: default
 nav_order: 2
 parent: ReShade
+permalink: reshade-gui
 ---
 
 # ReShade GUI
@@ -22,7 +23,7 @@ The "Home" tab in ReShade houses several buttons and menus that you can interact
 
 At the top of the ReShade "Home" menu will be preset selection section bar:
 
-![Current Preset](../images/gui-and-depth/rsui_preset.webp){: style="max-width:65%" }
+![Current Preset](../docs/reshade/images/gui-and-depth/rsui_preset.webp){: style="max-width:65%" }
 
 This bar allows the user to select, create, save manually, or configure their preset to auto save once changes are made. By default, ReShade saves presets in the game directory, in a file called `ReShadePreset.ini`.
 
@@ -32,7 +33,7 @@ This bar allows the user to select, create, save manually, or configure their pr
 
 The area below the preset selection bar is ReShade's shader list:
 
-![Technique List](../images/gui-and-depth/rsui_effectlist.webp){: style="max-width:65%" }
+![Technique List](../docs/reshade/images/gui-and-depth/rsui_effectlist.webp){: style="max-width:65%" }
 
 This list will provide the user with all of the shaders that is installed for ReShade. If a shader is disabled, there will be a blank square to the left of the shader, and if it's enabled, there will be a check to the left of the shader.
 
@@ -42,7 +43,7 @@ This list will provide the user with all of the shaders that is installed for Re
 
 Below the shader list will be the "Edit Global Preprocessor Definitions."
 
-![Global Pre-processor Definitions](../images/gui-and-depth/rsui_globalpreprocessors.webp){: style="max-width:65%" }
+![Global Pre-processor Definitions](../docs/reshade/images/gui-and-depth/rsui_globalpreprocessors.webp){: style="max-width:65%" }
 
 This button allows you to control aspects of shaders and depth before they are loaded by ReShade:
 
@@ -52,7 +53,7 @@ This button allows you to control aspects of shaders and depth before they are l
 
 The area below the shader list and edit pre-processor definitions button is the shader parameter list;
 
-![Effect Parameters](../images/gui-and-depth/rsui_effect_params.webp){: style="max-width:65%" }
+![Effect Parameters](../docs/reshade/images/gui-and-depth/rsui_effect_params.webp){: style="max-width:65%" }
 
 When you turn on a shader in ReShade, you will be able to see it's exposed parameters to the user here. Any changes to these parameters happen in realtime. So, any changes you make show up right away, letting you see the effect of your changes instantly.
 
@@ -65,7 +66,7 @@ When you turn on a shader in ReShade, you will be able to see it's exposed param
 
 The "Add-ons" Tab is for managing ReShade Add-ons:
 
-![Add-ons Tab](../images/gui-and-depth/rsui_addons_tab.webp){: style="max-width:65%" }
+![Add-ons Tab](../docs/reshade/images/gui-and-depth/rsui_addons_tab.webp){: style="max-width:65%" }
 
 Each Add-on adds extra features or improvements to your ReShade shaders. They can offer new effects or tools for tweaking existing ones. "Generic Depth" comes with every install of ReShade, but you can add many more during the install process.
 
@@ -78,7 +79,7 @@ Each Add-on adds extra features or improvements to your ReShade shaders. They ca
 
 The "Settings" tab lets you tweak ReShade settings like shader directories, menu access keys, FPS meter configurations, theme settings:
 
-![Settings Tab](../images/gui-and-depth/rsui_settings_tab.webp){: style="max-width:65%" }
+![Settings Tab](../docs/reshade/images/gui-and-depth/rsui_settings_tab.webp){: style="max-width:65%" }
 
 The dropdowns below detail commonly used options that you can adjust within the "Settings" tab:
 
@@ -168,7 +169,7 @@ The dropdowns below detail commonly used options that you can adjust within the 
 <details markdown="block" class="details-tree">
 <summary>Statistics Tab</summary>
 
-![Statistics Tab](../images/gui-and-depth/rsui_stats_tab.webp){: style="max-width:65%" }
+![Statistics Tab](../docs/reshade/images/gui-and-depth/rsui_stats_tab.webp){: style="max-width:65%" }
 
 The "Statistics" Tab, shown in the image, is a great tool for tracking and improving ReShade's performance. It gives detailed info on various aspects of ReShade's operation. All of the data provided for it is invaluable to those developing shaders, and those attempting to help troubleshoot other's issues.
 
