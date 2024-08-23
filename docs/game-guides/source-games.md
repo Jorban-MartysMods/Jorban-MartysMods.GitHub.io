@@ -2,7 +2,8 @@
 title: Source Games
 layout: page
 nav_order: 4
-parent: Special Games
+parent: Game Guides
+permalink: sourcegames
 ---
 
 # Source Games

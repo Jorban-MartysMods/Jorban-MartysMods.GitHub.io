@@ -6,9 +6,16 @@ parent: "iMMERSE Pro"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
 # iMMERSE Pro: Clarity
 
-![Clarity Header Image](../images/clarity_main.png)
+<div class="juxtapose" data-mode="horizontal">
+<img src="../images/clarity_header_off.webp" data-label="Disabled">
+<img src="../images/clarity_header_on.webp" data-label="Enabled">
+</div>
 
 iMMERSE Pro: Clarity is a shader based on the sharpening technique used in Photoshop's Clarity tool. Its main goal is to highlight and restore details that are either already in the image or hidden. Unlike other shaders, Clarity has features to avoid haloing and other artifacts.
 
@@ -44,3 +51,11 @@ iMMERSE Pro: Clarity is a shader based on the sharpening technique used in Photo
 * **Texture Intensity BG:** Configures the texture intensity for the background. Similar to the foreground setting, but applies to the background, allowing for independent control.
 
 * **Local Contrast Intensity BG:** Configures the local contrast intensity for the background. This setting helps manage contrast in the background, ensuring that it complements the foreground without introducing unwanted artifacts.
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
