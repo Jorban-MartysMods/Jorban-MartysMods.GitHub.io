@@ -96,3 +96,12 @@ If the issue still persists, double check that your ID is 100% identical to the 
 ## Restart FiveM and Enable "Fix UI Lag"
 
 Restart the FiveM client and then go into your FiveM settings in order to enable FiveM's "Fix UI Lag" option. Afterwards, restart your game a final time.
+
+---
+
+## Common Issues
+
+* ReShade "No effect files" error: This error occurs because the user either had a broken ReShade.ini file already or has messed something up along the way. The easiest fix is to go into the "Settings" tab of ReShade and fill in effect and texture search paths with their standard defaults:
+
+    | .\ReShade-Shaders\Shaders\*** | Effect Search Path |
+    | .\ReShade-Shaders\Textures\*** | Texture Search Path |
