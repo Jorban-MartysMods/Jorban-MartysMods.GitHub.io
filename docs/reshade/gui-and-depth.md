@@ -240,7 +240,7 @@ Basic troubleshooting steps to find a depth buffer with data:
 
 ---
 
-## Global Preprocessor Settings
+# Global Preprocessor Settings
 
 * **RESHADE_DEPTH_INPUT_IS_REVERSED:** This preprocessor setting is crucial when the normals appear correctly, but the depth image itself is missing or incorrect. The setting can be either `1` or `0`. If the depth isn't displaying as expected, toggling this value often resolves the issue. Essentially, this setting flips the depth direction, correcting the depth buffer's interpretation in some games.
 
