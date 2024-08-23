@@ -2,7 +2,8 @@
 title: "The Sims 4"
 layout: page
 nav_order: 5
-parent: Special Games
+parent: Game Guides
+permalink: ts4
 ---
 
 # The Sims 4
@@ -10,7 +11,7 @@ parent: Special Games
 The Sims 4 now supports DirectX 11, which means you can use all the awesome shaders from ReShade without running into those annoying compilation errors. Let's get you set up!
 
 <details markdown="block" class="details-tree">
-<summary>Setting DirectX 11 on Steam</summary>
+<summary>Steam</summary>
 
 ## Right-Click The Sims 4 in Steam
 1. Open your Steam Library.
@@ -39,7 +40,7 @@ Now that everything is complete, you can install ReShade as usual (if you need h
 ---
 
 <details markdown="block" class="details-tree">
-<summary>Setting DirectX 11 on EA</summary>
+<summary>EA App</summary>
 
 ## Open the EA App
 1. Launch the EA App on your computer.
