@@ -203,73 +203,40 @@ Ensure you've correctly set up ReShade and followed the previous steps on the ot
 
 ---
 
-## Understanding Depth Buffer Basics
+To start, enable the shader "DisplayDepth" This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders). The image below shows what the output **should** look like. The depth buffer is on the right side, the normal buffer (generated from depth) on the left side. 
 
-To start, enable the shader "DisplayDepth" This shader is included with all ReShade installs through the ReShade Installer. If you do not have it, you can manually install it from [Crosire's ReShade-Shaders repository](https://github.com/crosire/reshade-shaders/tree/slim/Shaders).
-
-The image below shows what the output **should** look like. The depth buffer is on the right side, the normal buffer (generated from depth) on the left side.
-
-![Depth Buffer Correct](../images/gui-and-depth/correct.webp)
-
-If it looks like above, you're good to go. Otherwise look below for the most common issues and solutions:
+![Depth Buffer Correct](../images/gui-and-depth/correct.webp){: style="max-width:50%" }
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Reversed Depth Buffer</summary>
+# Common Depth Buffer Issues
 
-The image below shows that the "Display Depth" shader has loaded correctly, however, the depth is reversed. 
+## Reversed Depth Buffer
 
-![Depth Buffer Reversed](../images/gui-and-depth/reversed.webp)
+![Depth Buffer Reversed](../images/gui-and-depth/reversed.webp){: style="max-width:50%" }
 
----
-
-You can solve this issue by inverting the `RESHADE_DEPTH_INPUT_IS_REVERSED` preprocessor setting within the "Global Preprocessor Definitions" under the "Home" tab of ReShade. If it is set to 1, set it to 0 and vice versa.
-
-</details>
+The image shows a reversed depth buffer. You can solve this by inverting the `RESHADE_DEPTH_INPUT_IS_REVERSED` preprocessor setting within the "Global Preprocessor Definitions" under the "Home" tab of ReShade. If it is set to 1, set it to 0 and vice versa.
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Upside Down Depth Buffer</summary>
+## Upside Down Depth Buffer
 
-The image below shows that the "DisplayDepth" shader has loaded correctly, however, the depth output is upside down:
+![Depth Buffer Upside Down](../images/gui-and-depth/upsidedown.webp){: style="max-width:50%" }
 
-![Depth Buffer Upside Down](../images/gui-and-depth/upsidedown.webp)
-
-You can solve this issue by simply inverting the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` preprocessor setting within the "Global Preprocessor Definitions" under the "Home" tab of ReShade. If it is set to 1, set it to 0 and vice versa.
-
-</details>
+The image shows an upside down depth buffer. You can solve this issue by simply inverting the `RESHADE_DEPTH_INPUT_IS_UPSIDE_DOWN` preprocessor setting within the "Global Preprocessor Definitions" under the "Home" tab of ReShade. If it is set to 1, set it to 0 and vice versa.
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Empty Depth Buffer</summary>
+## Empty Depth Buffer
 
-If your output resembles **either** of the images below, it lacks data from the "Generic Depth" Add-on:
+![Depth Buffer No Data](../images/gui-and-depth/depth_buffer_no_data_example.webp){: style="max-width:45%" } ![Depth Buffer No Data - Reversed](../images/gui-and-depth/depth_buffer_no_data_reversed_example.webp){: style="max-width:45%" }
 
-![Depth Buffer No Data](../images/gui-and-depth/depth_buffer_no_data_example.webp)
-![Depth Buffer No Data - Reversed](../images/gui-and-depth/depth_buffer_no_data_reversed_example.webp)
+The images above both show a depth buffer that is empty. This could be the result of choosing the wrong depth buffer, or a setting in-game that is blocking ReShade from accessing it. The issue is typically resolved by ensuring that MSAA is not enabled or by choosing the proper depth buffer.
 
-Before proceeding any further, ensure that these anti-aliasing options are disabled within your game:
-  * MSAA ANTIALIASING
-  * SSAA ANTIALIASING
-
-  FXAA or TXAA are acceptable, as they usually do not clear the depth-buffer information. Note that some games do not mention which AA method they use.
-
-The image shown above is the output of "DisplayDepth" showing no data from "Generic Depth." This means that:
-  * Your game is not presenting a depth buffer. 
-  * You have the wrong options configured for "Generic Depth," and your depth buffer selection may be wrong.
-  * You have the wrong settings chosen for your global preprocessor definitions.
-
----
-
-You can resolve this issue simply by toying around with "Generic Depth" in order to get the proper depth buffer active:
-  * Try toggling on and off "Copy depth buffer before clear operations" and "Copy depth buffer before fullscreen draw calls"
-  * Try selecting the depth buffer with the closest resolution to your game resolution
-  * Try selecting the depth buffer with the highest amount of draw calls and verticies.
-
-</details>
+Basic troubleshooting steps to find a depth buffer with data:
+  * Toggle on and off "Copy depth buffer before clear operations" and "Copy depth buffer before fullscreen draw calls".
+  * Select the depth buffer with the closest resolution to your game resolution.
+  * Select the depth buffer with the highest amount of draw calls and verticies.
 
 ---
 
