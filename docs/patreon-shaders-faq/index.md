@@ -2,6 +2,7 @@
 title: Marty's Mods FAQ
 layout: default
 nav_order: 3
+permalink: mmpatreonfaq
 ---
 
 # What Marty's Mods Provides
