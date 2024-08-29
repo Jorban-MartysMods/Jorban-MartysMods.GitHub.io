@@ -1,7 +1,7 @@
 ---
 title: Marty's Mods FAQ
 layout: default
-nav_order: 5
+nav_order: 3
 ---
 
 # What Marty's Mods Provides

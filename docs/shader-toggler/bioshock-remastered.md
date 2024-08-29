@@ -1,0 +1,48 @@
+---
+title: "BioShock Remastered"
+layout: page
+parent: "Shader Toggler"
+---
+
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
+# BioShock Remastered
+
+<div class="juxtapose" data-mode="horizontal">
+<img src="../images/bioshockremastered_st_off.png" data-label="Disabled">
+<img src="../images/bioshockremastered_st_on.png" data-label="Enabled">
+</div>
+
+---
+
+## Requirements
+
+* [Latest version of ReShade with Full Addon Support](https://reshade.me/)
+* [32Bit version of ShaderToggler](https://github.com/FransBouma/ShaderToggler/releases/download/1.2.1/ShaderToggler_x86_101.zip)
+
+## Created and Verified for
+
+| Date Used and Verified | Aug 29th 2024 |
+| Game Version | 1.0 |
+| Purchase Platform | Steam |
+
+---
+
+## Controls
+
+| Shaders | Keybind |
+| UI | Numpad 1 |
+| Bloom | Numpad 2 |
+| 2D Fog/Smoke/Light Bleed | Numpad 3 |
+| Particle Effects | Numpad 4 |
+| Water Distortion | Numpad 5 |
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>
