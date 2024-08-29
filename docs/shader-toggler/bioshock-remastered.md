@@ -11,8 +11,8 @@ parent: "Shader Toggler"
 # BioShock Remastered
 
 <div class="juxtapose" data-mode="horizontal">
-<img src="../images/bioshockremastered_st_off.png" data-label="Disabled">
-<img src="../images/bioshockremastered_st_on.png" data-label="Enabled">
+<img src="../images/bioshockremastered_st_off.webp" data-label="Disabled">
+<img src="../images/bioshockremastered_st_on.webp" data-label="Enabled">
 </div>
 
 ---
