@@ -138,7 +138,7 @@ The dropdowns below detail commonly used options that you can adjust within the 
 **Screenshot format:**
   * This option lets you change the file extension and compression processing for your screenshots. The available formats are:
     * Bitmap (*.bmp) - Choose this for a lossless file that's easy to edit but takes up more space. This format isn't ideal for online sharing. If selected, you can enable "Clear alpha channel" to remove the image's transparency layer if shaders support creating alpha channels.
-    * Portable Network Graphics (*.webp) - Choose this for a lossy file that's almost identical to the original and good for online sharing. This is the default option in ReShade. If selected, you can enable "Clear alpha channel."
+    * Portable Network Graphics (*.png) - Choose this for a lossy file that's almost identical to the original and good for online sharing. This is the default option in ReShade. If selected, you can enable "Clear alpha channel."
     * JPEG (*.jpeg) - Choose this for a compressed file that saves on storage and bandwidth but isn't as close to the original. If selected, you can adjust the compression quality.
 
 **Save current preset file:**
