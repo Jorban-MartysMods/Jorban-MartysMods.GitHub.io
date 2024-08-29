@@ -97,11 +97,11 @@ Since Addons stray a bit from the Shader install procedure they have to be insta
 
 1. Open the iMMERSE Ultimate archive.
 
-    ![Image](./images/immerse_ultimate_archive.webp)
+    ![Image](.\docs\patreon-shaders-faq\images\immerse_ultimate_archive.webp)
 
 2. Afterwards, you need to open the "**Addons**" folder within the iMMERSE Ultimate archive.
 
-    ![Image](./images/immerse_ultimate_addons.webp)
+    ![Image](.\docs\patreon-shaders-faq\images\immerse_ultimate_addons.webp)
 
 3. Once you're in the "**Addons**" folder of the iMMERSE Ultimate archive, navigate to your game folder where ReShade and the game exectuable exist. If you're unsure where your game directory is located, please see our guide on [how to locate your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/) for assistance!
 
@@ -115,24 +115,24 @@ Downloading any premium Marty's Mods repository requires access to Discord and P
 
 1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-    ![Patreon Connected Apps](./images/patreon-connected-apps.webp){: style="max-width:59%" }
+    ![Patreon Connected Apps](.\docs\patreon-shaders-faq\images\patreon-connected-apps.webp){: style="max-width:59%" }
 
 
 2. Once there, click the "**Discord**" button
 
-    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.webp)
+    ![Patreon Discord Connected Apps Button](.\docs\patreon-shaders-faq\images\patreon-discord-button.webp)
 
 3. Afterwards, you'll be taken to a new portion of the settings menu where you can "**Connect**" a Discord account. Click the "**Connect**" button.
 
-    ![Patreon Discord Connected Apps Connect Button](./images/discord-connect-button.webp){: style="max-width:39%" }
+    ![Patreon Discord Connected Apps Connect Button](.\docs\patreon-shaders-faq\images\discord-connect-button.webp){: style="max-width:39%" }
 
 4. A new window should appear asking you to log into Discord.
 
-    ![Patreon Discord Login](./images/patreon-discord-login.webp){: style="max-width:39%" }
+    ![Patreon Discord Login](.\docs\patreon-shaders-faq\images\patreon-discord-login.webp){: style="max-width:39%" }
 
 5. Now that you are logged in, Discord will tell you about Patreon's connection to your Discord account, as well as ask you to authorize the connection. Click "**Authorize**" in the bottom right hand corner.
 
-    ![Patreon Discord Authorization](./images/discord-authorize.webp){: style="max-width:80%" }
+    ![Patreon Discord Authorization](.\docs\patreon-shaders-faq\images\discord-authorize.webp){: style="max-width:80%" }
 
 # Forcing Patreon to Provide Discord Benefits
 
@@ -140,16 +140,16 @@ Unfortunately, the Patreon and Discord intergration for larger servers and Patre
 
 0. If you are already a member of our Discord server, it's best to leave the server manually. You can do this by going to the top of Discord on the left hand side, clicking "PGHub" and then clicking "Leave Server"
 
-    ![PGHub Leave](./images/pghub_leave.webp)
+    ![PGHub Leave](.\docs\patreon-shaders-faq\images\pghub_leave.webp)
 
 1. First, click the hyperlink here in order to navigate to [Patreon's 'Connected Apps' Settings.](https://www.patreon.com/settings/apps/) Once there, you will be greeted with a host of applications that you can connect to your Patreon account.
 
-    ![Patreon Connected Apps](./images/patreon-connected-apps.webp){: style="max-width:59%" }
+    ![Patreon Connected Apps](.\docs\patreon-shaders-faq\images\patreon-connected-apps.webp){: style="max-width:59%" }
 
 2. Once there, click the "**Discord**" button
 
-    ![Patreon Discord Connected Apps Button](./images/patreon-discord-button.webp)
+    ![Patreon Discord Connected Apps Button](.\docs\patreon-shaders-faq\images\patreon-discord-button.webp)
 
 3. Now that you're at the connected application page for Discord, click "Join Server" for the Patreon server for "Pascal Gilcher"
 
-    ![Patreon Pascal Gilcher Join Button](./images/patreon_join_server.webp){: style="max-width:60%" }
+    ![Patreon Pascal Gilcher Join Button](.\docs\patreon-shaders-faq\images\patreon_join_server.webp){: style="max-width:60%" }
