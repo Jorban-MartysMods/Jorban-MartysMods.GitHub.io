@@ -124,6 +124,7 @@ The most frequent problem is selecting the wrong game executable during installa
 * Game compatibility with ReShade.
 * Missing software dependencies, like the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
 * Conflicts with other game mods.
+* Ensure that your game is closed.
 
 </details>
 
@@ -136,7 +137,7 @@ The most frequent problem is selecting the wrong game executable during installa
 
 ## Identifying Game Architecture and Rendering API
 
-If you already know your game's archtecture and Rendering API, you're more than welcome to skip this part of the guide. However, if you are unsure, make sure to navigate to the [PCGamingWiki website](https://www.pcgamingwiki.com/wiki/Home). This website is home to many wiki pages with just about every game that exists on PC.
+If you already know your game's archtecture and Rendering API, you're more than welcome to skip this part of the guide. However, if you are unsure, make sure to navigate to the [PCGamingWiki website](https://www.pcgamingwiki.com/wiki/Home).
 
 ---
  
