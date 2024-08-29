@@ -45,7 +45,9 @@ Below the shader list will be the "Edit Global Preprocessor Definitions."
 
 ![Global Pre-processor Definitions](../docs/reshade/images/gui-and-depth/rsui_globalpreprocessors.webp){: style="max-width:65%" }
 
-This button allows you to control aspects of shaders and depth before they are loaded by ReShade:
+This button allows you to control aspects of shaders and depth before they are loaded by ReShade. When clicking the "Edit globlal preprocessor definitions" you will be greeted with a tab that allows you to change definitions for the preprocessor:
+
+![Global Pre-processor Definitions](../docs/reshade/images/gui-and-depth/rsui_globalpreprocessors_definitions.webp)
 
 ---
 
