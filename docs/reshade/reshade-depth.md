@@ -28,11 +28,11 @@ Finding the correct depth buffer in ReShade can be tricky, but this guide will w
 
 First, open up ReShade's "Addons" tab and focus on the "Generic Depth" addon.
 
-![ReShade Generic Depth](../docs/reshade/images/gui-and-depth/generic-depth.png)
+![ReShade Generic Depth](../docs/reshade/images/gui-and-depth/generic-depth.webp)
 
 Here, you will find settings for automatic depth buffer selection and the depth buffers that are available to you.
 
-![ReShade Generic Depth Settings](../docs/reshade/images/gui-and-depth/generic-depth-settings.png)
+![ReShade Generic Depth Settings](../docs/reshade/images/gui-and-depth/generic-depth-settings.webp)
 
 With "DisplayDepth" enabled, click through each depth buffer that is available and find the one that most closely resembles what is in your game. The depth buffer you are looking for is likely to be the same resolution as your game and typically has the highest draw calls or vertices. If the buffer looks incorrect (e.g., it's completely black, white, or flat), try another option. In some games, the depth buffer might not be accessible due to the way the game engine handles rendering, in which case, you may need to adjust settings or use other troubleshooting methods. Continue adjusting until the depth buffer output in "DisplayDepth" matches the expected visual result.
 
