@@ -1,5 +1,5 @@
 ---
-title: FastGI
+title: TurboGI
 layout: page
 nav_order: 1
 parent: Quark
@@ -10,14 +10,14 @@ grand_parent: Shader Repositories
 <!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
 <link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
 
-# FastGI
+# TurboGI
 
 <div class="juxtapose" data-mode="horizontal" style="max-height: 820px;">
-<img src="../images/turbo_gi_header_off.webp" data-label="OFF">
-<img src="../images/turbo_gi_header_on.webp" data-label="ON">
+<img src="../images/turbo_gi_header_off.webp" data-label="Disabled">
+<img src="../images/turbo_gi_header_on.webp" data-label="Enabled">
 </div>
 
-FastGI is a **very** lightweight [global illumination](https://en.wikipedia.org/wiki/Global_illumination) shader designed for low-end devices and some integrated GPUs (iGPUs). It provides realistic lighting effects without requiring high-end hardware.
+TurboGI is a **very** lightweight [global illumination](https://en.wikipedia.org/wiki/Global_illumination) shader designed for low-end devices and some integrated GPUs (iGPUs). It provides realistic lighting effects without requiring high-end hardware.
 
 ---
 
