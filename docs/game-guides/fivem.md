@@ -17,7 +17,7 @@ Do not ask for additional help in relation to getting FiveM to work in accordanc
 
 ## Housekeeping
 
-For this guide to be followed through step-by-step, you will have to first set up Windows file extenions to be properly viewed. You can get the information for setting up Windows file extensions to be viewed by following this our guide for [enabling Windows file extensions](https://guides.martysmods.com/docs/additional-guides/enabling-windows-file-extensions/)!
+For this guide to be followed through step-by-step, you will have to first set up Windows file extenions to be properly viewed. In order to see file extensions properly, follow our guide for [enabling Windows file extensions](https://guides.martysmods.com/docs/additional-guides/enabling-windows-file-extensions/)!
 
 ---
 
@@ -31,10 +31,9 @@ Start by downloading the latest version of the Add-on Support Build of ReShade. 
 
 Navigate to your GTAV folder by using our [guide for locating your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/)! Once there, look specifically for these two files, and singular folder and keep a mental note of where they are located:
 
-| File or Folder | Description |
-| dxgi.dll | ReShade Binary File |
-| reshade.ini | ReShade Settings File| 
-| reshade-shaders | ReShade Shaders & Textures Folder |
+* dxgi.dll
+* reshade.ini
+* reshade-shaders
 
 ![GTAV ReShade Install Files](../docs/game-guides/images/fivem-gtav-reshade-files.webp)
 
@@ -62,10 +61,9 @@ Once you have located your FiveM Installation folder, enter the `FiveM Applicati
 
 Cut and paste ReShade's files and `ReShade-Shaders` folder from your GTAV directory into the FiveM `plugins` folder:
 
-| File or Folder | Description |
-| dxgi.dll | ReShade Binary File |
-| reshade.ini | ReShade Settings File| 
-| reshade-shaders | ReShade Shaders & Textures Folder |
+* dxgi.dll
+* reshade.ini
+* reshade-shaders
 
 ![FiveM reshade install Location](../docs/game-guides/images/fivem-reshade-install-location.webp)
 
