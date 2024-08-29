@@ -300,7 +300,9 @@ This guide assumes that you already have ReShade installed and working in your g
 
 ## Downloading the Shader Repository(s)
 
-This guide will be utilizing the iMMERSE repository on GitHub, however, you can utilize any shader repository for this guide. It's also worth noting that not all shader repositories are hosted the same way. So your downloading process may differ from the one shown here. If you do not need to download any shader repositories you can skip this part of the guide and continue onwards. The first thing that you want to do, is to navigate to the GitHub repository of your choice. Once there, youc an click on the green "<> Code" button at the top right hand side of the repository.
+This guide will be utilizing the iMMERSE repository on GitHub, however, you can utilize any shader repository for this guide. It's also worth noting that not all shader repositories are hosted the same way. So your downloading process may differ from the one shown here. 
+
+The first thing that you want to do, is to navigate to the GitHub repository of your choice. Once there, youc an click on the green "<> Code" button at the top right hand side of the repository.
 
 ![<> Code Button](../docs/reshade/images/downloading-and-installing/github_shader_repo_code_button_highlight.webp)
 
