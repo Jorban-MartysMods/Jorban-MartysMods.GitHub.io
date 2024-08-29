@@ -16,7 +16,7 @@ Getting ReShade properly installed for Grand Theft Auto V can be challenging. A 
 
 ## Install ReShade through the ReShade Installer
 
-To install ReShade for Grand Theft Auto V, use the ReShade Installer. If you're unfamiliar with the installation process, refer to [our guide on downloading and installing ReShade](https://guides.martysmods.com/docs/reshade-guides/downloading-and-installing-reshade/). Make sure to select the "GTAV.exe" executable when installing ReShade. Choosing the wrong executable will result in the ReShade Installer placing the incorrect ReShade binary in your game directory.
+To install ReShade for Grand Theft Auto V, use the ReShade Installer. If you're unfamiliar with the installation process, refer to [our guide on downloading and installing ReShade](https://guides.martysmods.com/download-and-install-reshade). Make sure to select the "GTAV.exe" executable when installing ReShade. Choosing the wrong executable will result in the ReShade Installer placing the incorrect ReShade binary in your game directory.
 
 ---
 

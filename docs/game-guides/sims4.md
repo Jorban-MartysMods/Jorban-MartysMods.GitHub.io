@@ -33,7 +33,7 @@ The Sims 4 now supports DirectX 11, which means you can use all the awesome shad
 ---
 
 ## Install ReShade as Usual
-Now that everything is complete, you can install ReShade as usual (if you need help, make sure to follow [our guide on how to installing ReShade](https://guides.martysmods.com/docs/reshade/downloading-and-installing/)). Once are prompted to select a Rendering API make sure to select "DirectX 10/11/12".
+Now that everything is complete, you can install ReShade as usual (if you need help, make sure to follow [our guide on how to installing ReShade](https://guides.martysmods.com/download-and-install-reshade)). Once are prompted to select a Rendering API make sure to select "DirectX 10/11/12".
 
 </details>
 
@@ -63,6 +63,6 @@ Now that everything is complete, you can install ReShade as usual (if you need h
 ---
 
 ## Install ReShade as Usual
-Now that everything is complete, you can install ReShade as usual (if you need help, make sure to follow [our guide on how to installing ReShade](https://guides.martysmods.com/docs/reshade/downloading-and-installing/)). Once are prompted to select a Rendering API make sure to select "DirectX 10/11/12".
+Now that everything is complete, you can install ReShade as usual (if you need help, make sure to follow [our guide on how to installing ReShade](https://guides.martysmods.com/download-and-install-reshade)). Once are prompted to select a Rendering API make sure to select "DirectX 10/11/12".
 
 </details>
