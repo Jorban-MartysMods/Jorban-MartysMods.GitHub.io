@@ -12,7 +12,7 @@ ReShade is a open sourced, generic, post-processing tool that allows users to en
 
 ## Standard ReShade Build (Download ReShade x.x.x)
 
-The Standard Build of ReShade is the most common version. It is ideal for online games with strict anti-cheat mechanisms (e.g., Dead by Daylight, PUBG, Apex Legends.) This build is used for online games due to its limitations to features to prevent misuse and cheating in online games. If you are unsure of what build to pick, this is likely the best choice!
+The Standard Build of ReShade is the most common version. It is ideal for online games with strict anti-cheat mechanisms. This build is used for online games due to its limitations to features to prevent misuse and cheating in online games. If you are unsure of what build to pick, this is likely the best choice!
 
 ## Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
 
