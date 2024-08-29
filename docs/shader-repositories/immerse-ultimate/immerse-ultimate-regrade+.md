@@ -1,24 +1,31 @@
 ---
-title: "ReGrade+ (Addon)"
+title: "ReGrade + (Addon)"
 layout: page
 nav_order: 10
 parent: "iMMERSE Ultimate"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
 # iMMERSE Ultimate: ReGrade +
 
-ReGrade+ is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.
+<div class="juxtapose" data-mode="horizontal">
+ <img src="../images/regradeplus_header_off.webp" data-label="Disabled">
+ <img src="../images/regradeplus_header_on.webp" data-label="Enabled">
+</div>
+
+ReGrade + is a commercial-level color-correction suite for ReShade, inspired by industry-standard tools. It eliminates the need to leave the game for detailed adjustments, allowing real-time color correction with an intuitive UI. This makes it a seamless experience for users, especially those knowledgeable in Color Theory, Photography, and Image Post-Processing.
 
 ---
 
 ## Enabling ReGrade +
 
-Before adjusting parameters, move the "ReGrade +" tab to a separate window in the ReShade/Game UI. This controls the entire shader and lets you tweak other effects while viewing the results in real-time.
+Before adjusting parameters, move the "ReGrade +" tab to a separate window in the ReShade/Game UI. This controls the entire shader and lets you tweak other effects while viewing the results in real-time. Enabling the shader alone won't activate it. If any component is not running, the Addon/Shader Window will indicate it, like so:
 
-Enabling the shader alone won't activate it. If any component is not running, the Addon/Shader Window will indicate it, like so:
-
-![ReGradePlus ReShade Window Alerts - All OFF](../images/regrade_shaders_disabled.png)
+![ReGradePlus ReShade Window Alerts - All OFF](../images/regradeplus_shaders_disabled.webp)
 
 ---
 
@@ -28,23 +35,23 @@ The "Scopes" section provides graphical representations of various color statist
 
 * **Histogram Y:** Displays the luminance levels of the image.
 
-    ![Histogram Y Image](../images/regrade_histogram_y.png)
+    ![Histogram Y Image](../images/regradeplus_histogram_y.webp)
 
 * **Histogram RGB:** Shows the color levels of the image.
 
-    ![Histogram RGB Image](../images/regrade_histogram_rgb.png)
+    ![Histogram RGB Image](../images/regradeplus_histogram_rgb.webp)
 
 * **Waveform Y:** Visualizes the luminance levels in a waveform/spectral format.
 
-    ![Waveform Y Image](../images/regrade_waveform_y.png)
+    ![Waveform Y Image](../images/regradeplus_waveform_y.webp)
 
 * **Waveform RGB:** Visualizes the color levels in the same waveform/spectral format.
 
-    ![Waveform RGB Image](../images/regrade_waveform_rgb.png)
+    ![Waveform RGB Image](../images/regradeplus_waveform_rgb.webp)
 
 * **Waveform RGB Parade:** Separates the color levels by channel in a waveform/spectral format.
 
-    ![Waveform RGB Parade Image](../images/regrade_waveform_rgb_parade.png)
+    ![Waveform RGB Parade Image](../images/regradeplus_waveform_rgb_parade.webp)
 
 
 ---
@@ -85,7 +92,7 @@ By default, it comes enabled in the "RGB" mode, which tweaks all of the 3 main c
 
 To start using it, click on a point in the graph and move it to start changing the tone curve. To plot a new point, click somewhere else and move that point. The changes, along with the graphic, will all update in real-time.
 
-![ReGradePlus Tone Curve Points Example](../images/regradep_curves_points.webp)
+![ReGradePlus Tone Curve Points Example](../images/regradeplus_tonecurve.webp)
 
 ---
 
@@ -93,20 +100,22 @@ To start using it, click on a point in the graph and move it to start changing t
 
 The "Color Correction" section is subdivided in two: "Split Tuning" and a "Color Wheel".
 
-"Split Toning" allows you to change the colors in a per-light level basis. It has 3 wheels: "Shadows," "Midtones," and "Highlights."
+"Split Toning" allows you to change the colors in a per-light level basis. It has 3 wheels: "Shadows," "Midtones," and "Highlights." There are two ways you can edit those values, you can either click on the point on the center of color wheel and move it on where you want it to be, or you can drag the gauges left and right for more granular and fine-tuning of the values.
 
-There are two ways you can edit those values, you can either click on the point on the center of color wheel and move it on where you want it to be, or you can drag the gauges left and right for more granular and fine-tuning of the values.
-
-![ReGradePlus Split Toning Wheel Example](../images/regradep_colorwheel_toning.webp)
+![ReGradePlus Split Toning Wheel Example](../images/regradeplus_colorcorrection.webp)
 
 The second wheel allows you to change the color values of Red, Orange, Yellow, Green, Aqua, Purple and Magenta by Luma (brightness) and also Saturation (Amount of Color).
 
-By default, the Color Wheel comes configured to change the color values based on Luma ("Hue vs Luma"), but you can change the values you're choosing by clicking on the small wheel. This allows you to change between the first mode and the "Hue vs Saturation" mode.
-
-To tweak the values, click on the color you wanna change it and move it with the Mouse, by holding the "Shift" key, you can linearly move it in the vertical/diagonal axis, preventing mistakes when you wanna change its saturation or brightness without changing the color tone.
-
-To reset the values of a changed color, right click on the point you wanna reset. 
+By default, the Color Wheel comes configured to change the color values based on Luma ("Hue vs Luma"), but you can change the values you're choosing by clicking on the small wheel. This allows you to change between the first mode and the "Hue vs Saturation" mode. To tweak the values, click on the color you wanna change it and move it with the Mouse, by holding the "Shift" key, you can linearly move it in the vertical/diagonal axis, preventing mistakes when you wanna change its saturation or brightness without changing the color tone. To reset the values of a changed color, right click on the point you wanna reset. 
 
 While this part of the shader doesn't allow you to drag any sort of gauges, it allows you to see how much of the values are changed in each section of the spectrum.
 
-![ReGradePlus Color Wheel Example](../images/regradep_colorwheel_example.webp)
+![ReGradePlus Color Wheel Example](../images/regradeplus_huevsluma.webp)
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>

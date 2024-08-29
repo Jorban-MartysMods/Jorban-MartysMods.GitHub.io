@@ -6,9 +6,16 @@ parent: "iMMERSE Pro"
 grand_parent: Shader Repositories
 ---
 
+<!-- Calls the CSS for the script that runs the sliders on the page -->
+<!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
+<link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
+
 # iMMERSE Pro: Depth of Field
 
-![DoF Header Image](../images/dof_main.png)
+<div class="juxtapose" data-mode="horizontal">
+ <img src="../images/dof_header_off.webp" data-label="Disabled">
+ <img src="../images/dof_header_on.webp" data-label="Enabled">
+</div>
 
 iMMERSE Pro: Depth of Field is a shader that adds depth of field to a scene. It emulates real-life camera parameters and features, allowing you to focus on specific points or objects, whether macro or micro, to meet your virtual photography needs.
 
@@ -100,3 +107,11 @@ iMMERSE Pro: Depth of Field is a shader that adds depth of field to a scene. It 
 * **DOF_ADVANCED_BOKEH_EFFECTS:** 
 
 * **DOF_FULL_RESOLUTION:** Toggles iMMERSE Pro: Depth of Field to use the full screen resolution.
+
+<!-- Ending script that runs the sliders on the page -->
+<script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Juxtapose.make();
+  });
+</script>

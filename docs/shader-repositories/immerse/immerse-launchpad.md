@@ -15,11 +15,13 @@ grand_parent: Shader Repositories
 
 iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, MXAO, and ReLight. Because of this, you won't see many visible changes on screen.
 
+---
+
 ## Smoothed Normals
 
 * **Smoothed Normals** Configures the normals to be smoothed or not. Smoothed normals allows for RTGI and ReLight to provide much better lighting than they could with the original normals.
 
-    ![Comparison](../images/launchpad_smoothed_normals.png)
+    ![Comparison](../images/launchpad_smoothed_normals.webp)
 
 ---
 
@@ -29,6 +31,6 @@ iMMERSE: Launchpad is a helper shader for other Marty's Mods shaders like RTGI, 
 
 * **Textured Normals Intensity:** Adjusts the strength of the textured normals. Setting this too high can create exaggerated normals where they shouldn't be.
 
-    ![Texture Normals Intensity](../images/launchpad_textured_normals.png)
+    ![Texture Normals Intensity](../images/launchpad_textured_normals.webp)
 
 * **Textured Normals Quality:** Ranges from 1 to 3, allowing you to control the quality of the textured normals. It's best to set this to 3 unless you need better performance.
