@@ -42,6 +42,13 @@ parent: "Shader Toggler"
 | Purchase Platform | Steam |
 | BioShock Remastered ShaderToggler Aug-28-2024 | [Download](https://raw.githubusercontent.com/Jorban-MartysMods/jorban-martysmods.github.io/dev/docs/shader-toggler/files/BioShock%20Remastered%20ShaderToggler%20Aug-28-2024.7z) |
 
+---
+
+## Known Issues
+
+* Can't get rid of the hands. Causing so ends up deleting other elements that are undesired.
+ * Workaround: Use the camera (later in the game) and toggle the UI off.
+
 <!-- Ending script that runs the sliders on the page -->
 <script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
 <script>
