@@ -45,8 +45,7 @@ parent: "Shader Toggler"
 
 ## Known Issues
 
-* Not all bloom is removed. Nothing I can do about it without causing issues. 
-* When disabling bloom, it will take ~15 seconds before it completely disappears
+* Not all bloom is removed. Nothing I can do about it without causing issues.
 * Not all smoke/fog could be removed without destroying the game.
 * All lens flares could not be removed.
 * Lens Distortion could not be removed.
