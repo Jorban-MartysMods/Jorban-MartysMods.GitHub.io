@@ -50,7 +50,7 @@ parent: "Shader Toggler"
 * Not all smoke/fog could be removed without destroying the game.
 * All lens flares could not be removed.
 * Lens Distortion could not be removed.
- * Use [Alias Isolation](https://github.com/RyanJGray/aliasIsolation) if you want to remove Lens Distortion.
+  * Use [Alias Isolation](https://github.com/RyanJGray/aliasIsolation) if you want to remove Lens Distortion.
 
 <!-- Ending script that runs the sliders on the page -->
 <script src="{{ '/assets/js/juxtapose.js' | relative_url }}"></script>
