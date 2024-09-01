@@ -8,7 +8,7 @@ parent: "Shader Toggler"
 <!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
 <link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
 
-# Horizon: Zero Dawn
+# Alien Isolation
 
 <div class="juxtapose" data-mode="horizontal">
 <img src="../images/ai_st_off.webp" data-label="Disabled">
