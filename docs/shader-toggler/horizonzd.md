@@ -32,25 +32,25 @@ parent: "Shader Toggler"
 | Smoke/Fog | Numpad 3 |
 | Projected Water Caustics | Numpad 4 |
 | Bloom | Numpad 5 |
-| 2D Hologram | Numpad 6 |
-| 2D Hologram Lighting | Numpad 7 |
-| Lens Flares | Numpad 8 |
+| Projected Lighting | Numpad 6 |
+| Lens Flares | Numpad 7 |
+| Holograms | Numpad 8 |
 
 ---
 
 ## Download
 
-| Date Used and Verified | Aug 31st 2024 |
+| Date Used and Verified | Oct 3rd 2024 |
 | Game Version | 1.0.11.14 |
 | Purchase Platform | Steam, Epic, GOG |
-| Horizon Zero Dawn ShaderToggler Aug-30-2024 | [Download](https://raw.githubusercontent.com/Jorban-MartysMods/jorban-martysmods.github.io/dev/docs/shader-toggler/files/Horizon%20Zero%20Dawn%20ShaderToggler%20Aug-31-24.7z) |
+| Horizon Zero Dawn ShaderToggler Oct-03-2024 | [Download](https://raw.githubusercontent.com/Jorban-MartysMods/jorban-martysmods.github.io/dev/docs/shader-toggler/files/Horizon%20Zero%20Dawn%20ShaderToggler%20Oct-03-24.7z) |
 
 ---
 
 ## Known Issues
 
 * Not all bloom is removed. Nothing I can do about it without causing issues. 
-* When disabling bloom, it will take ~15 seconds before it completely disappears
+* When disabling bloom, it will take ~15 seconds before it completely disappears.
 * Not all smoke/fog could be removed without destroying the game.
 
 <!-- Ending script that runs the sliders on the page -->
