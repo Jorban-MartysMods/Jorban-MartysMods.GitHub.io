@@ -41,7 +41,7 @@ parent: "Shader Toggler"
 | Date Used and Verified | Sep 6th 2024 |
 | Game Version | 4.27.2.0 |
 | Purchase Platform | Steam |
-| Deep Rock Galactic ShaderToggler SEP-06-24 | [Download](https://raw.githubusercontent.com/Jorban-MartysMods/jorban-martysmods.github.io/dev/docs/shader-toggler/files/The%20Witcher%203%20Wild%20Hunt%20ShaderToggler%20Aug-30-24.7z) |
+| Deep Rock Galactic ShaderToggler SEP-06-24 | [Download](https://raw.githubusercontent.com/Jorban-MartysMods/jorban-martysmods.github.io/dev/docs/shader-toggler/files/Deep%20Rock%20Galactic%20ShaderToggler%20Sep-06-24.7z) |
 
 ---
 
