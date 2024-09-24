@@ -21,7 +21,7 @@ iMMERSE: MXAO is Marty's new iteration of MXAO, a robust ambient occlusion shade
 
 ---
 
-## Debug Pparameters
+## Debug Parameters
 
 * **Show Raw AO** is the debug mode of MXAO. This lets you see what each ambient occlusion type does on screen without the distraction of textures and colors.
 
