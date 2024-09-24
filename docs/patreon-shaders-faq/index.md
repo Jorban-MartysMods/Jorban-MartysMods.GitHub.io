@@ -18,8 +18,8 @@ iMMERSE is the core repository of shaders from Marty's Mods and are available fo
 | **iMMERSE: Shaders** | **Description:** |
 | [Launchpad](https://www.martysmods.com/launchpad/) | A shader designed to process information for both RTGI and ReLight |
 | [MXAO](https://www.martysmods.com/mxao/) | A robust and powerful ambient occlusion shader that can take advantage of irradiance bitfields |
-| [Sharpen](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-sharpen/) | A contrast based sharpening shader that can take depth into account |
-| [Anti-Aliasing](https://guides.martysmods.com/docs/shader-repositories/immerse/immerse-smaa/) | ReShade's fastest SMAA shader avlaible |
+| [Sharpen](https://guides.martysmods.com/docs/shader-repositories/immerse/sharpen/) | A contrast based sharpening shader that can take depth into account |
+| [Anti-Aliasing](https://guides.martysmods.com/docs/shader-repositories/immerse/smaa/) | ReShade's fastest SMAA shader avlaible |
 
 ---
 
@@ -32,7 +32,7 @@ iMMERSE Pro is a premium repository of shaders provided by Marty's Mods, availab
 | [Clarity](https://www.martysmods.com/clarity/) | A contrast based sharpening technique that closely relates to Photoshop's Clarity function but in real-time. |
 | [Depth of Field](https://www.martysmods.com/physical-depth-of-field/) | A depth of field shader that aims to emulate how physical cameras work in the real world |
 | [ReGrade](https://www.martysmods.com/regrade/) | An extremely powerful real-time color grading suite for ReShade |
-| [Insight](https://guides.martysmods.com/docs/shader-repositories/immerse-pro/immerse-pro-insight/) | A shader to help users by creating a histogram and magnification tool in ReShade |
+| [Insight](https://guides.martysmods.com/docs/shader-repositories/immerse-pro/insight/) | A shader to help users by creating a histogram and magnification tool in ReShade |
 | [Solaris](https://www.martysmods.com/solaris/) | An absurdly robust and performant bloom shader built for ReShade |
 
 ---
