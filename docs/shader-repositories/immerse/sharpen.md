@@ -21,7 +21,7 @@ iMMERSE: Sharpen is a straightforward yet effective sharpening shader that uses 
 
 ---
 
-## Sharpen Intensity
+## Arguments
 
 *  **Sharpen Intensity:** Adjusts the sharpness applied to the screen. Start with a value of `0.000` and slowly increase it until you achieve a clear enhancement in game details without causing over-sharpening.
 

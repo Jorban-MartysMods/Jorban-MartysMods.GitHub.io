@@ -29,7 +29,7 @@ To better understand how SMAA is working, you can use its debug function. These 
 
 ---
 
-## General Shader Arguments
+## Arguments
 
 * **Edge Detection Type:** Specifies the method used for detecting edges in SMAA. The available options include:
    * **Luminance Edge Detection:** Detects edges based on brightness differences.
