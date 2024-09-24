@@ -10,7 +10,7 @@ grand_parent: Shader Repositories
 <!-- Why this is required, I will never fucking know because I tried everything to possibly get it to work without needing it LMAO -->
 <link rel="stylesheet" href="{{ '/assets/css/juxtapose.css' | relative_url }}">
 
-# iMMERSE MXAO
+# iMMERSE: MXAO
 
 <div class="juxtapose" data-mode="horizontal">
  <img src="../images/mxao_header_off.webp" data-label="Disabled">
