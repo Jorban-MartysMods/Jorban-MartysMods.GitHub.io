@@ -35,11 +35,9 @@ Each game will have their own process for injecting ReShade. Below will go over 
 
 When opening the ReShade Installer, you'll be greeted with the option to choose what application that you want to install ReShade to. This part is very important, as if the wrong application or executable is selected, ReShade will not launch when your game starts.
 
-![Game List](../docs/reshade/images/downloading-and-installing/rs_game_list.webp)
+![Game List](../docs/reshade/images/setupgamelist.webp)
 
 If your game does not appear in the listing, click the "Browse..." button at the bottom right of the ReShade Installer. This button will open up a "File Explorer" window that will allow you to manually find your game's executable. If you are unsure of where the executable is located, check our [guide on finding your game's executable and directory](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
-
-![Browse](../docs/reshade/images/downloading-and-installing/rs_browse.webp){: style="max-width:90%" }
 
 ---
 
@@ -47,51 +45,21 @@ If your game does not appear in the listing, click the "Browse..." button at the
 
 In order for ReShade to properly be installed, the ReShade Installer needs to know what Rendering API your game utilizes. The Rendering API has to be selected properly for ReShade to successfully inject, so make sure that you are getting this option correct, otherwise ReShade will not launch with your game. If unsure which API your game uses, check [PCGamingWiki](https://pcgamingwiki.com) for details.
 
-![ReShade Rendering API Selection](../docs/reshade/images/downloading-and-installing/rs_rendering_api_select.webp)
-
----
-
-## Installing Presets
-
-ReShade presets, stored in `.ini` files, allow you to apply someone else's visual customizations, including shader configurations and hotkeys. The ReShade Installer simplifies preset installation: just select the desired `.ini` file, and the installer automatically handles shader downloads and installations required by the preset.
-
-![Preset Selection](../docs/reshade/images/downloading-and-installing/rs_preset.webp)
-
-If you don't have a preset to install, you can bypass this step by clicking "Skip" in the preset installation window's bottom right corner.
+![ReShade Rendering API Selection](../docs/reshade/images/setuprenderingapi.webp)
 
 ---
 
 ## Installing Shaders
 
-Shaders are essential for enhancing game visuals through ReShade, offering a range of looks tailored by users. The ReShade Installer facilitates easy discovery and installation of these shaders. Shaders are organized into repositories, displayed during the installation process. You can learn more about each by clicking on the blue-highlighted repository or author names.
+In the ReShade installer, shaders are organized into groups called repositories. Each repository has different shaders developed by their repository maintainer. In order to install shaders, simply select the desired repositories and click "Next". If you'd like to learn more about what each shader repository holds, you can click on the blue highlighted text.
 
-![Shader Repository Links](../docs/reshade/images/downloading-and-installing/reshade_installer_shader_repo_link_highlight.webp)
-
-To install shaders, simply select the desired repositories and click "Next".
-
-![Shader Repositories Selection](../docs/reshade/images/downloading-and-installing/rs_shader.webp)
-
-<details markdown="block" class="details-tree">
-<summary>Check Tick</summary>
-
-Selecting a repository with a **check tick** installs all shaders from that repository. Click "Next" to proceed with automatic installation.
-
-![Check Tick Example](../docs/reshade/images/downloading-and-installing/reshade_installer_shader_repo_check_tick.webp)
-
-</details>
+![Shader Repositories Selection](../docs/reshade/images/setupshaderselect.webp)
 
 ---
 
-<details markdown="block" class="details-tree">
-<summary>Square Tick</summary>
+## Installing Presets
 
-Selecting a repository with a **square tick** lets you choose individual shaders within a repository. After selecting, click "Next" to install.
-
-![Square Tick Selection](../docs/reshade/images/downloading-and-installing/reshade_installer_shader_repo_square_tick.webp)
-
-![Individual Shader Selection](../docs/reshade/images/downloading-and-installing/rs_shader_select.webp)
-
-</details>
+ReShade presets, stored in `.ini` files, allow you to apply someone else's visual configurations. In order to install a preset from another user, click browse at the bottom of the shader installation portion of the installer and then choose your desired `.ini` file. The ReShade installer will mark every shader used in the preset and install them for you.
 
 ---
 
@@ -99,7 +67,7 @@ Selecting a repository with a **square tick** lets you choose individual shaders
 
 Add-ons, introduced as a new feature in ReShade, expand customization through the ReShade Add-on API. They're primarily for users interested in exploring advanced features from both previous shader developers and current add-on creators. Unless you're familiar with what an add-on does, it's recommended to avoid selecting any from the list to prevent potential game instability.
 
-![Selecting Add-ons](../docs/reshade/images/downloading-and-installing/rs_addon_select.webp)
+![Selecting Add-ons](../docs/reshade/images/setupaddons.webp)
 
 ---
 
@@ -107,13 +75,9 @@ Add-ons, introduced as a new feature in ReShade, expand customization through th
 
 Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game.
 
-![Installation Complete](../docs/reshade/images/downloading-and-installing/rs_complete.webp)
-
-Upon successful installation, you'll see a ReShade banner in-game:
+Now that you are through the installer, launch your game and ensure that ReShade's banner appears on the top of your game.
 
 ![ReShade In-Game Banner](../docs/reshade/images/downloading-and-installing/rs_game_banner.webp)
-
-If you don't see this banner, ReShade may not have been injected correctly. Try reinstalling, ensuring all steps are followed precisely.
 
 ---
 
@@ -124,7 +88,6 @@ The most frequent problem is selecting the wrong game executable during installa
 * Game compatibility with ReShade.
 * Missing software dependencies, like the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
 * Conflicts with other game mods.
-* Ensure that your game is closed.
 
 </details>
 
