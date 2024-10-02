@@ -16,7 +16,7 @@ The Standard Build of ReShade is the most common version. It is ideal for online
 
 ## Full Add-On Support ReShade Build (Download ReShade x.x.x with full add-on support)
 
-The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems (e.g., Final Fantasy XXIV, World of Warcraft, Baldur's Gate 3.) This build will offer the full feature set and freedom for creating presets with various shaders and add-ons. If your game is offline, it's best to choose this build to prevent issues down the line!
+The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems. This build will offer the full feature set and freedom for creating presets with various shaders and add-ons. If your game is offline, it's best to choose this build to prevent issues down the line!
 
 ![ReShade Download Options](../docs/reshade/images/downloading-and-installing/rs_download.webp){: style="max-width:90%" }
 
@@ -73,9 +73,7 @@ Add-ons, introduced as a new feature in ReShade, expand customization through th
 
 ## Finishing Up
 
-Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game.
-
-Now that you are through the installer, launch your game and ensure that ReShade's banner appears on the top of your game.
+Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game to check that ReShade is fully installed.
 
 ![ReShade In-Game Banner](../docs/reshade/images/downloading-and-installing/rs_game_banner.webp)
 
@@ -84,7 +82,9 @@ Now that you are through the installer, launch your game and ensure that ReShade
 <details markdown="block" class="details-tree">
 <summary>Common Issues</summary>
 
-The most frequent problem is selecting the wrong game executable during installation. If you encounter issues, revisit the "Selecting Your Game" section for guidance. Incorrect Rendering API selection is another common hiccup. If unsure, review the "Selecting the Rendering API" section for more clarity. Other potential issues include:
+Typically, the largest issue when installing ReShade is that the user will select the wrong executable or rendering API for their game. If you encounter issues, revisit the "Selecting Your Game" and "Selecting the Rendering API sections for guidance.
+
+Other potential issues include:
 * Game compatibility with ReShade.
 * Missing software dependencies, like the [.NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net481-web-installer).
 * Conflicts with other game mods.
