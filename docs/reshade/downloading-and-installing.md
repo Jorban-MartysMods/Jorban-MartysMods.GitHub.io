@@ -18,7 +18,7 @@ The Standard Build of ReShade is the most common version. It is ideal for online
 
 The Full Add-On Support Build of ReShade is best for offline games or games without anti-cheat systems. This build will offer the full feature set and freedom for creating presets with various shaders and add-ons. If your game is offline, it's best to choose this build to prevent issues down the line!
 
-![ReShade Download Options](../docs/reshade/images/downloading-and-installing/rs_download.webp){: style="max-width:90%" }
+![ReShade Download Options](../docs/reshade/images/websitedownload.webp){: style="max-width:90%" }
 
 ---
 
@@ -75,7 +75,7 @@ Add-ons, introduced as a new feature in ReShade, expand customization through th
 
 Once the ReShade Installer completes, a confirmation screen will show up. Simply click the "Finish" button at the bottom right of the installer, then launch your game to check that ReShade is fully installed.
 
-![ReShade In-Game Banner](../docs/reshade/images/downloading-and-installing/rs_game_banner.webp)
+![ReShade In-Game Banner](../docs/reshade/images/reshadeinstalled.webp){: style="max-width:55%" }
 
 ---
 
@@ -106,7 +106,7 @@ If you already know your game's archtecture and Rendering API, you're more than 
  
 ## Download the ReShade Installer
 
-The next step will be to download the latest ReShade installer from the [official ReShade website](https://reshade.me). The installer holds the ReShade binaries required in order to manually install ReShade.
+The next step will be to download the latest ReShade installer from the [official ReShade website](https://reshade.me).
 
 ---
 
@@ -118,13 +118,13 @@ This guide uses 7Zip in order to extract the ReShade binaries from the ReShade I
  
 ## Extract the ReShade Binary
 
-Once 7Zip is installed, Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, and hover over 7Zip, the select the "Open Archive" option.
+Once 7Zip is installed, Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, and hover over 7Zip, then select the "Open Archive" option.
 
-![Open with 7Zip](../docs/reshade/images/downloading-and-installing/reshade_setup_open_with_7zip.webp)
+![Open with 7Zip](../docs/reshade/images/setupopenwith7zip.webp){: style="max-width:65%" }
 
 Upon clicking "Open Archive," a new window will appear that holds the two ReShade binaries. You can extract the DLL that relates to your game's architecture by draging the file out of the 7Zip window to your Desktop.
 
-![Extract DLL](../docs/reshade/images/downloading-and-installing/7zip_extract_reshade_binaries.webp)
+![Extract DLL](../docs/reshade/images/setup7zipbinaries.webp){: style="max-width:65%" }
 
 | ReShade's 64-Bit Binary | ReShade64.dll |
 | ReShade's 32-Bit Binary | ReShade32.dll |
@@ -135,7 +135,7 @@ Upon clicking "Open Archive," a new window will appear that holds the two ReShad
 
 After you've extracted the right binary, right-click the `ReShadeXX.dll` and click "Rename." Afterwards you can rename the binary to the proper graphics injection name for the Rendering API that your game utilizes.
 
-![Rename DLL](../docs/reshade/images/downloading-and-installing/extacted_reshade_binary_rename.webp)
+![Rename DLL](../docs/reshade/images/renameextractedbinary.webp){: style="max-width:30%" }
 
 | DirectX 10/11/12 | dxgi.dll |
 | DirectX 12 | d3d12.dll |
@@ -150,11 +150,11 @@ After you've extracted the right binary, right-click the `ReShadeXX.dll` and cli
 
 Lastly, you will need to move the renamed DLL into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Place in Game Folder](../docs/reshade/images/downloading-and-installing/place_reshade_binary_game_folder.webp)
+![Place in Game Folder](../docs/reshade/images/extractedbinaryingamedirectory.webp){: style="max-width:70%" }
 
 Upon completion, your game should launch with ReShade injected!
 
-![Successful Installation](../docs/reshade/images/downloading-and-installing/ultrakill_reshade_installed.webp)
+![Successful Installation](../docs/reshade/images/reshadeinstalled.webp){: style="max-width:65%" }
 
 </details>
 
@@ -204,11 +204,11 @@ This guide uses 7Zip in order to extract the ReShade binaries from the ReShade I
 
 Once 7Zip is installed, Right-click the ReShade Installer `ReShade_Setup_x.x.x.exe`, and hover over 7Zip, the select the "Open Archive" option.
 
-![Open with 7Zip](../docs/reshade/images/downloading-and-installing/reshade_setup_open_with_7zip.webp)
+![Open with 7Zip](../docs/reshade/images/setupopenwith7zip.webp){: style="max-width:65%" }
 
 Upon clicking "Open Archive," a new window will appear that holds the two ReShade binaries. You can extract the DLL that relates to your game's architecture by draging the file out of the 7Zip window to your Desktop.
 
-![Extract DLL](../docs/reshade/images/downloading-and-installing/7zip_extract_reshade_binaries.webp)
+![Extract DLL](../docs/reshade/images/setup7zipbinaries.webp){: style="max-width:65%" }
 
 | ReShade's 64-Bit Binary | ReShade64.dll |
 | ReShade's 32-Bit Binary | ReShade32.dll |
@@ -219,7 +219,7 @@ Upon clicking "Open Archive," a new window will appear that holds the two ReShad
 
 You will need to move the ReShade DLL into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Place in Game Folder](../docs/reshade/images/downloading-and-installing/place_reshade_binary_game_folder.webp)
+![Place in Game Folder](../docs/reshade/images/extractedbinaryingamedirectory.webp){: style="max-width:70%" }
 
 ---
 
