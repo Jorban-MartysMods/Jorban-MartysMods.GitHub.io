@@ -168,9 +168,6 @@ Certain games do not support automatic ReShade injection during runtime.<br>This
 {: .note }
 When manually injecting ReShade using Crosire's Inject Tool, you have to manually install shaders as well.
 
-{: .warning} 
-Crosire's Inject tool, being an external injector, is more likely to trigger anti-cheat systems. **Use with caution and at your own risk**.
-
 ---
 
 ## Identifying Game Architecture and Rendering API
@@ -215,39 +212,27 @@ Upon clicking "Open Archive," a new window will appear that holds the two ReShad
 
 ---
 
-## Move the ReShade Binary
+## Move the ReShade and Inject Binary
 
-You will need to move the ReShade DLL into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
+You will need to move the ReShade DLL and Inject EXE into the root folder of your game, the same directory where the game's executable is located. If you're unsure of your game's executable location, follow [our guide on identifying your game's executable](https://guides.martysmods.com/docs/additional-guides/finding-your-game-executable-and-directory/).
 
-![Place in Game Folder](../docs/reshade/images/extractedbinaryingamedirectory.webp){: style="max-width:70%" }
-
----
-
-## Find the Game's Process Name
-
-In order to find the game's process name, you will need to open up Window's Task Manager. Once there, right click on your game under the processes tab, and then click "Go to Details."
-
-![Go to Details](../docs/reshade/images/downloading-and-installing/task_manager_go_to_details.webp)
-
-This will bring you to a highlighted executable name that you can use for the ReShade injector.
-
-![Executable Name](../docs/reshade/images/downloading-and-installing/task_manager_details_view_exe.webp)
+![Place in Game Folder](../docs/reshade/images/extractedbinaryingamedirectoryreshade32.dll.webp){: style="max-width:49%" }![Place in Game Folder](../docs/reshade/images/extractedbinaryingamedirectoryinject32.webp){: style="max-width:49%" }
 
 ---
 
 ## Manually Inject ReShade
 
-The last step for using the ReShade injector is quite simple, but you may need to follow closely. Make sure to close your game, and then navigate to your game's directory. Once there, open a command prompt terminal by typing "CMD" into your File Explorer's address bar.
+The last step for using the ReShade injector is quite simple, but you may need to follow closely. Make sure to close your game, and then navigate to your game's directory. Then, open a command prompt terminal by typing `CMD` into your File Explorer's address bar.
 
-![Open CMD](../docs/reshade/images/downloading-and-installing/cmd_in_file_explorer.webp)
+![Open CMD](../docs/reshade/images/extractedbinaryingamedirectorycmdaddressbar.webp){: style="max-width:65%" }
 
-Once CMD has opened, make sure to type: `inject[x32/x64].exe "name_of_the_process.exe"` and hit Enter.
+Once CMD has opened, make sure to type: `inject[32/64].exe "name_of_the_process.exe"` and hit Enter.
 
-![Inject Command](../docs/reshade/images/downloading-and-installing/type_inject_params.webp)
+![Inject Command](../docs/reshade/images/terminalinjectionparametersinject32.exe.webp){: style="max-width:65%" }
 
 After you've hit enter, you will need to launch your game. If successful, ReShade will be injected on the launch of your game!
 
-![Successful Injection](../docs/reshade/images/downloading-and-installing/ultrakill_reshade_installed.webp)
+![Successful Injection](../docs/reshade/images/reshadeinstalled.webp){: style="max-width:65%" }
 
 </details>
 
