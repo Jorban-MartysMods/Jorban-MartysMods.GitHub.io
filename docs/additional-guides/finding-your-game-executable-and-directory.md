@@ -7,34 +7,31 @@ parent: Additional Guides
 
 # Finding your Game's Executable and Game Directory
 
-Each system and user setup is unique, resulting in diverse ReShade installations and behaviors. If you're having trouble locating your game's executable, here's a step-by-step guide to assist you.
+Each user, platform, and game all require different needs for installing video games. In so, each game is typically installed in a different location, so it can be tedious finding the running location of the game's executables and game directory. This guide will simplify the process for finding your game's exectuable and directory.
 
 ---
 
-## Accessing Task Manager
+## Open Your Game
 
-Right-click the Windows Taskbar and select "Task Manager."
-
-* **Windows 11:**
-
-   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global.webp)
-
-* **Windows 10:**
-
-   ![Taskbar Option](../images/finding-your-game-executable-and-directory/right_click_taskbar_global_win10.webp)
+In order to find the location of your game, the game executable needs to be open!
 
 ---
 
-## Locating the Game's Executable
+## Open Task Manager
 
-With your game actively running, switch to your Task Manager. Then, navigate the "Processes" tab and locate your game. Once found, right-click it and click "Open file location."
+Once your game is open, then right-click the Windows Taskbar and select "Task Manager".
 
-* **Windows 11:**
+   ![Taskbar Option](../images/taskmanagertaskbar.webp){: style="max-width:20%" }
 
-   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global.webp)
 
-* **Windows 10:**
+---
 
-   ![Find Game](../images/finding-your-game-executable-and-directory/processes_task_manager_game_right_click_global_win10.webp) 
+## Finding your Game in Task Manager.
 
-This will highlight your game's application in File Explorer. Here, you can identify both the location and the specific executable of the game.
+Now that "Task Manager" is open, navigate to the "Processes" tab and locate your game. Now, right-click your game and then click "Open file location."
+
+   ![Find Game](../images/taskmanageropenfilelocation.webp){: style="max-width:80%" }
+
+If you've done this properly, a "File Explorer" window will open and highlight your game's application file.
+
+   ![Find Game](../images/fileexplorergamehighlighted.webp){: style="max-width:80%" }
