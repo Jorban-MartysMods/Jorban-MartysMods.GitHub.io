@@ -30,8 +30,8 @@ Once your game is open, then right-click the Windows Taskbar and select "Task Ma
 
 Now that "Task Manager" is open, navigate to the "Processes" tab and locate your game. Now, right-click your game and then click "Open file location."
 
-   ![Find Game](../images/taskmanageropenfilelocation.webp){: style="max-width:80%" }
+   ![Find Game](../images/taskmanageropenfilelocation.webp){: style="max-width:60%" }
 
 If you've done this properly, a "File Explorer" window will open and highlight your game's application file.
 
-   ![Find Game](../images/fileexplorergamehighlighted.webp){: style="max-width:80%" }
+   ![Find Game](../images/fileexplorergamehighlighted.webp){: style="max-width:60%" }
